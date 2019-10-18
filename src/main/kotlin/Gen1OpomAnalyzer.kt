@@ -5,43 +5,18 @@ import java.io.File
 import java.io.FileWriter
 
 fun main() {
-    val resultsFolder = File("../Pokemon-Showdown/collectedStats")
-    if (!resultsFolder.isDirectory) {
-        error("Folder not found")
-    }
-    val movesets = ArrayList<String>()
-    for (file in resultsFolder.listFiles()) {
-//        println(file)
-        movesets.add(file.name)
-    }
-    println(movesets)
-
-    val mrs = MatchupResultStore(movesets)
-
-    for (file in resultsFolder.listFiles()) {
-        val left = file.name
-        for (line in file.readLines()) {
-            val parts = line.split(" ")
-            val right = "${parts[0]}_${parts[1]}"
-            val leftWins = Integer.parseInt(parts[2])
-            val rightWins = Integer.parseInt(parts[3])
-            val draws = Integer.parseInt(parts[4])
-            if (draws > 0) {
-                println("Found draws in matchup: $left $right")
-            }
-            // TODO: Store matchup results
-            mrs.storeMatchupResult(left, right, MatchupResult(leftWins, rightWins, draws))
-        }
-    }
+    val mrs = loadGen1Results()
+    val movesets = mrs.contestants
     println("Loaded all results")
 
-    val scores = HashMap<String, Int>()
+    val scores = HashMap<String, Double>()
     for (left in movesets) {
-        scores[left] = 0
+        scores[left] = 0.0
         for (right in movesets) {
             if (left == right) continue
 
-            scores[left] = scores[left]!! + mrs.getMatchupResult(left, right).leftWins
+            val matchupResult = mrs.getMatchupResult(left, right)
+            scores[left] = scores[left]!! + matchupResult.leftWins + (matchupResult.draws / 2.0)
         }
     }
 
@@ -73,7 +48,7 @@ fun main() {
     }
 }
 
-fun writeSortedScoresPage(sortedScores: List<Pair<String, Int>>) {
+fun writeSortedScoresPage(sortedScores: List<Pair<String, Double>>) {
     BufferedWriter(FileWriter(File("sortedScores.html"))).use { writer ->
         writer.append("<html><head><title>Gen 1 OPOM - sorted by score</title></head>\n<body>\n")
         writer.append("<h1>Gen 1 OPOM sorted scores</h1>\n\n")
