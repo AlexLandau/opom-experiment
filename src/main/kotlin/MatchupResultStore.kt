@@ -83,4 +83,9 @@ class MatchupResultStore<T> (val contestants: List<T>) {
     }
 }
 
-data class MatchupResult(val leftWins: Int, val rightWins: Int, val draws: Int)
+data class MatchupResult(val leftWins: Int, val rightWins: Int, val draws: Int) {
+    fun getLeftWinningRate(): Double {
+        val total = (leftWins + rightWins + draws).toDouble()
+        return (leftWins + (draws / 2.0)) / total
+    }
+}

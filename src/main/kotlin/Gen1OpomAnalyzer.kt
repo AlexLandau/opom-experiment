@@ -3,6 +3,7 @@ package net.alloyggp.opom
 import java.io.BufferedWriter
 import java.io.File
 import java.io.FileWriter
+import java.text.NumberFormat
 
 fun main() {
     val mrs = loadGen1Results()
@@ -16,7 +17,7 @@ fun main() {
             if (left == right) continue
 
             val matchupResult = mrs.getMatchupResult(left, right)
-            scores[left] = scores[left]!! + matchupResult.leftWins + (matchupResult.draws / 2.0)
+            scores[left] = scores[left]!! + matchupResult.getLeftWinningRate()
         }
     }
 
@@ -54,9 +55,13 @@ fun writeSortedScoresPage(sortedScores: List<Pair<String, Double>>) {
         writer.append("<h1>Gen 1 OPOM sorted scores</h1>\n\n")
 
         writer.append("<table>\n")
+        val doubleFormatter = NumberFormat.getInstance()
+        doubleFormatter.isGroupingUsed = false
+        doubleFormatter.maximumFractionDigits = 2
         for ((moveset, score) in sortedScores) {
             val (pokemon, move) = moveset.split("_")
-            writer.append("<tr><td>$score</td><td>${pokemon.capitalize()}</td><td>$move</td></tr>\n")
+            val formattedScore = doubleFormatter.format(score)
+            writer.append("<tr><td>$formattedScore</td><td>${pokemon.capitalize()}</td><td>$move</td></tr>\n")
         }
         writer.append("</table>\n")
 
