@@ -18,10 +18,12 @@ fun main() {
 
     val scoresAgainstCurStrategy = initializeScoresAgainstStrategy(mrs, curStrategy)
 
+    var prevStrategy = curStrategy.copy()
+
     var i = 0
     while (true) {
         val (chosen, score) = movesets.withIndex().map { (moveIndex, moveName) -> moveName to scoresAgainstCurStrategy[moveIndex] }.maxBy { it.second }!!
-        println("Picked $chosen with score $score")
+//        println("Picked $chosen with score $score")
 
         val chosenIndex = movesets.indexOf(chosen)
         // Update the _ and the scores against the current strategy
@@ -32,11 +34,34 @@ fun main() {
         }
 
         i++
-        if (i >= 50) {
+        if (i >= 400) {
             i = 0
             curStrategy.print()
+            // TODO: Battle prev vs. cur
+            println("Effectiveness against previous: ${getScore(curStrategy, prevStrategy, mrs)}")
+            prevStrategy = curStrategy.copy()
         }
     }
+}
+
+fun getScore(leftStrat: Strategy, rightStrat: Strategy, mrs: MatchupResultStore<String>): Double {
+    val movesets = mrs.contestants
+    var sum = 0.0
+    for ((leftIndex, leftChoice) in movesets.withIndex()) {
+        val leftCount = leftStrat.getChoiceCount(leftIndex)
+        if (leftCount == 0) {
+            continue
+        }
+        for ((rightIndex, rightChoice) in movesets.withIndex()) {
+            val rightCount = rightStrat.getChoiceCount(rightIndex)
+            if (rightCount == 0) {
+                continue
+            }
+            val result = mrs.getMatchupResult(leftChoice, rightChoice).getLeftWinningRate()
+            sum += result * leftCount * rightCount
+        }
+    }
+    return sum / leftStrat.getChoicesSum() / rightStrat.getChoicesSum()
 }
 
 fun initializeScoresAgainstStrategy(mrs: MatchupResultStore<String>, strat: Strategy): Array<Double> {

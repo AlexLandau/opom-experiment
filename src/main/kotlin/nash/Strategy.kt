@@ -92,6 +92,12 @@ class Strategy(private val choiceNames: List<String>, private val default: Int) 
         }
     }
 
+    fun copy(): Strategy {
+        val copy = Strategy(choiceNames, default)
+        choices.copyInto(copy.choices)
+        return copy
+    }
+
     companion object {
         fun loadFromFile(file: File, choiceNames: List<String>): Strategy {
             val lines = file.readLines()
