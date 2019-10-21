@@ -29,7 +29,17 @@ class Strategy(private val choiceNames: List<String>, private val default: Int) 
             choices[index]++
         }
     }
-    private fun setChoice(index: Int, count: Int) {
+    fun incrementChoiceByN(index: Int, n: Int) {
+        if (choices[index] == 0) {
+            choices[index] = default + n
+        } else {
+            choices[index] += n
+        }
+        if (choices[index] == default) {
+            choices[index] = 0
+        }
+    }
+    fun setChoice(index: Int, count: Int) {
         if (count == default) {
             choices[index] = 0
         } else {
@@ -96,6 +106,10 @@ class Strategy(private val choiceNames: List<String>, private val default: Int) 
         val copy = Strategy(choiceNames, default)
         choices.copyInto(copy.choices)
         return copy
+    }
+
+    fun getTopChoiceIndex(): Int {
+        return choices.indexOf(choices.max()!!)
     }
 
     companion object {
