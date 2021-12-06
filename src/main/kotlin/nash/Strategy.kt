@@ -109,7 +109,7 @@ class Strategy(private val choiceNames: List<String>, private val default: Int) 
     }
 
     fun getTopChoiceIndex(): Int {
-        return choices.indexOf(choices.max()!!)
+        return choices.indexOf(choices.maxOrNull()!!)
     }
 
     companion object {

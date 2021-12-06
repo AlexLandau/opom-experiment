@@ -82,7 +82,7 @@ fun main() {
             return sum
         }
 
-        val (chosen, score) = movesets.map { it to getScoreAgainstCurStrategy(it) }.maxBy { it.second }!!
+        val (chosen, score) = movesets.map { it to getScoreAgainstCurStrategy(it) }.maxByOrNull { it.second }!!
         println("Picked $chosen with score $score")
         val chosenMovesetIndex = movesets.indexOf(chosen)
 //        curStrategy.choices[chosenMovesetIndex]++

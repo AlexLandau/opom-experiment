@@ -44,7 +44,7 @@ fun runEquilibriumSearch(mrs: MatchupResultStore<String>, startingStrategy: Stra
     for (iteration in 1..numIterations) {
         val (chosen, score) = movesets.withIndex().filter {
             (moveIndex, moveName) -> !bannedList.get(moveIndex)
-        }.map { (moveIndex, moveName) -> moveName to scoresAgainstCurStrategy[moveIndex] }.maxBy { it.second }!!
+        }.map { (moveIndex, moveName) -> moveName to scoresAgainstCurStrategy[moveIndex] }.maxByOrNull { it.second }!!
 //        println("Picked $chosen with score $score")
 
         val chosenIndex = movesets.indexOf(chosen)
