@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Try some plots</title>
+    <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+</head>
+<body>
+<p>Above the script</p>
+<div id="vsPrev" style="width:1000px;height:800px;"></div>
+<div id="bestOverCurrentScore" style="width:1000px;height:800px;"></div>
+<div id="stratsPlot" style="width:1000px;height:800px;"></div>
+<script>
+    var request = new XMLHttpRequest();
+    request.open("GET", "time-series-data.json");
+    request.send();
+    request.onload = function() {
+        var timeSeriesData = JSON.parse(this.responseText);
+        console.log(Object.keys(timeSeriesData));
+
+        var vsPrev = document.getElementById('vsPrev');
+
+        var vsPrevX = [];
+        var vsPrevY = [];
+        for (let x in timeSeriesData.effectivenessVsPrev) {
+            vsPrevX.push(x);
+            vsPrevY.push(timeSeriesData.effectivenessVsPrev[x] - 0.5);
+            if (x % 100000 === 0) {
+                console.log(x);
+            }
+        }
+        var trace1 = {
+          x: vsPrevX,
+          y: vsPrevY,
+          mode: 'lines'
+        };
+        var data = [ trace1 ];
+        var layout = {
+          title:'Effectiveness versus previous strategy (minus 0.5)'
+        };
+        Plotly.newPlot(vsPrev, data, layout);
+
+        let bestOverCurrentScorePlot = document.getElementById('bestOverCurrentScore');
+        let bestOverCurrentX = [];
+        var bestOverCurrentY = [];
+        for (let x in timeSeriesData.normalizedScoreOverEquilibrium) {
+            bestOverCurrentX.push(x);
+            bestOverCurrentY.push(timeSeriesData.normalizedScoreOverEquilibrium[x]);
+            if (x % 100000 === 0) {
+                console.log(x);
+            }
+        }
+        var trace1 = {
+          x: bestOverCurrentX,
+          y: bestOverCurrentY,
+          mode: 'lines'
+        };
+        var data = [ trace1 ];
+        var layout = {
+          title:'Best pure-strat effectiveness vs. current strat'
+        };
+        Plotly.newPlot(bestOverCurrentScorePlot, data, layout);
+
+
+        var stratsPlot = document.getElementById('stratsPlot');
+
+        let stratsData = [];
+        for (let moveName in timeSeriesData.strats) {
+            console.log(moveName);
+            let stratX = [];
+            let stratY = [];
+            for (let x in timeSeriesData.strats[moveName]) {
+                stratX.push(x);
+                stratY.push(timeSeriesData.strats[moveName][x]);
+            }
+            let trace = {
+              x: stratX,
+              y: stratY,
+              mode: 'lines',
+              name: moveName
+            };
+            stratsData.push(trace);
+        }
+        var layout = {
+          title:'Strategies over time'
+        };
+        Plotly.newPlot(stratsPlot, stratsData, layout);
+
+
+    };
+</script>
+<p>Below the script</p>
+</body>
+</html>

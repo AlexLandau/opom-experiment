@@ -1,0 +1,22 @@
+0
+178 chansey_bide 13242
+326 mewtwo_blizzard 58048
+359 mewtwo_rest 4654
+479 snorlax_bodyslam 6925
+552 mewtwo_thunderbolt 37877
+620 mewtwo_icebeam 22666
+638 lapras_bide 37391
+1181 kabutops_slash 18986
+1252 chansey_rest 5563
+1597 omastar_icebeam 4301
+2143 chansey_seismictoss 16980
+2798 rhydon_earthquake 10012
+2962 mewtwo_recover 31169
+3047 cloyster_clamp 22608
+3136 mewtwo_bodyslam 41360
+3422 mewtwo_fireblast 52312
+3599 vaporeon_hydropump 1751
+3678 mewtwo_psychic 2191
+3802 dewgong_toxic 14285
+3835 rhydon_seismictoss 12805
+3870 mewtwo_bide 26464

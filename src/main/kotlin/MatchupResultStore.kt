@@ -12,7 +12,11 @@ class MatchupResultStore<T> (val contestants: List<T>) {
     fun getMatchupResult(leftContestant: T, rightContestant: T): MatchupResult {
         val i1 = contestantsIndex[leftContestant]!!
         val i2 = contestantsIndex[rightContestant]!!
-
+        return getMatchupResultByIndices(i1, i2)
+    }
+    fun getMatchupResultByIndices(leftIndex: Int, rightIndex: Int): MatchupResult {
+        val i1 = leftIndex
+        val i2 = rightIndex
         if (i1 < i2) {
             val matchupIndex = getMatchupIndex(i1, i2)
             val leftWins = contents[matchupIndex * 3]

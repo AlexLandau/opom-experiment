@@ -2,6 +2,8 @@ package net.alloyggp.opom.nash
 
 import java.io.File
 import java.text.NumberFormat
+import java.util.*
+import kotlin.collections.HashMap
 
 class Strategy(private val choiceNames: List<String>, private val default: Int) {
     private val choices: Array<Int> = Array(choiceNames.size, { 0 })
@@ -15,6 +17,15 @@ class Strategy(private val choiceNames: List<String>, private val default: Int) 
     }
     fun getNonDefaultValuesCount(): Int {
         return choices.count { it != 0 }
+    }
+    fun getNonDefaultIndices(): SortedSet<Int> {
+        val results = TreeSet<Int>()
+        for (i in choices.indices) {
+            if (choices[i] != 0) {
+                results.add(i)
+            }
+        }
+        return results
     }
     fun getNumOptions(): Int {
         return choices.size

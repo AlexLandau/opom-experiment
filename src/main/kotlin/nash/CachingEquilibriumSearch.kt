@@ -5,18 +5,24 @@ import net.alloyggp.opom.loadGen1Results
 import java.io.File
 import java.util.*
 
+// TODO: Graph of OPOMs changing prevalence over time
+// TODO: Compare outputs of several runs (maybe add some non-determinism?)
+// TODO: Output graph of which OPOMs beat which
+// Note: This takes 500 seconds in its current state, but that's probably because I'm
+// mixing in a ton of I/O that could be put on separate threads or structured differently
+// (e.g. writing to a smaller number of files)
 fun main() {
     val mrs = loadGen1Results()
     val movesets = mrs.contestants
     println("Calculating...")
 
     val bannedList = BitSet(movesets.size)
-    bannedList.set(movesets.indexOf("mewtwo_icebeam"))
-    bannedList.set(movesets.indexOf("mewtwo_bide"))
+//    bannedList.set(movesets.indexOf("mewtwo_icebeam"))
+//    bannedList.set(movesets.indexOf("mewtwo_bide"))
 
 //    val filename = File("cstrat4.txt")
     val startTime = System.nanoTime()
-    val strat = runEquilibriumSearch(mrs, null, bannedList, 100_000)
+    val strat = runEquilibriumSearch(mrs, null, bannedList, 1_000_000)
     println("Time to run: ${(System.nanoTime() - startTime) / 1_000_000_000} s")
     strat.print()
 }
@@ -38,7 +44,7 @@ fun runEquilibriumSearch(mrs: MatchupResultStore<String>, startingStrategy: Stra
     }
 
 
-//    var prevStrategy = curStrategy.copy()
+    var prevStrategy = curStrategy.copy()
 
     var i = 0
     for (iteration in 1..numIterations) {
@@ -51,14 +57,28 @@ fun runEquilibriumSearch(mrs: MatchupResultStore<String>, startingStrategy: Stra
         updateStrategyByN(chosenIndex, chosen, 1)
 
         i++
-        if (i >= 1000) {
+        if (i >= 100) {
             i = 0
 //            curStrategy.print()
-//            curStrategy.saveToFile(filename)
+            curStrategy.saveToFile(File("time-series/${iteration}.strat.txt"))
+            val effVsPrev = getScore(curStrategy, prevStrategy, mrs)
+            File("time-series/${iteration}.effectivenessVsPrev.txt").writeText("$effVsPrev")
+            val (chosen2, score2) = movesets.withIndex().filter {
+                (moveIndex, moveName) -> !bannedList.get(moveIndex)
+            }.map { (moveIndex, moveName) -> moveName to scoresAgainstCurStrategy[moveIndex] }.maxByOrNull { it.second }!!
+            // TODO: Normalize this (score2) relative to
+            val score2AtEquilibrium = curStrategy.getChoicesSum().toDouble() / 2.0
+            val scoreOverEquilibrium = score2 - score2AtEquilibrium
+            val normalizedScoreOverEquilibrium = (scoreOverEquilibrium / curStrategy.getChoicesSum())
+            File("time-series/${iteration}.rawScoreOverEquilibrium.txt").writeText("$scoreOverEquilibrium")
+            File("time-series/${iteration}.normalizedScoreOverEquilibrium.txt").writeText("$normalizedScoreOverEquilibrium")
+            File("time-series/${iteration}.bestOverCurrentStrat.txt").writeText(chosen2)
+//            println("Current best pure OPOM selection vs. this: $chosen2 with score $score2, vs $score2AtEquilibrium ($scoreOverEquilibrium)")
+//            println ("          Normalized score over equilibrium: ($normalizedScoreOverEquilibrium)")
             // TODO: Battle prev vs. cur
 //            println("Latest relativized score: ${score / (curStrategy.getChoicesSum() - 1)}")
-//            println("Effectiveness against previous: ${getScore(curStrategy, prevStrategy, mrs)}")
-//            prevStrategy = curStrategy.copy()
+            println("Effectiveness against previous: ${effVsPrev}")
+            prevStrategy = curStrategy.copy()
             // See if this helps...
             for ((moveIndex, move) in movesets.withIndex()) {
                 if (curStrategy.getChoiceCount(moveIndex) > 0) {
