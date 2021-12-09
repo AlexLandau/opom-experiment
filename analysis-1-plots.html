@@ -10,7 +10,7 @@
 <div id="stratsPlot" style="width:1000px;height:800px;"></div>
 <script>
     var request = new XMLHttpRequest();
-    request.open("GET", "time-series-data.json");
+    request.open("GET", "time-series-1-data.json");
     request.send();
     request.onload = function() {
         var timeSeriesData = JSON.parse(this.responseText);
