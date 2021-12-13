@@ -1,0 +1,595 @@
+Loading results data...
+Loaded data in 34734 ms
+Calculating...
+Starting the optimizer...
+Elapsed: 32 ms
+Result: [[D@6e6c3152, 0.5]
+Result: [1.0, 0.5]
+Cur strategy:
+  abra_bide: 100%
+Adding strategy abra_substitute, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@7d0587f1, 0.5]
+Result: [0.0, 1.0, 0.5]
+Cur strategy:
+  abra_substitute: 100%
+Adding strategy abra_bodyslam, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@5d76b067, 0.5]
+Result: [0.0, 1.0, 0.0, 0.5]
+Cur strategy:
+  abra_bodyslam: 100%
+Adding strategy abra_counter, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@2a17b7b6, 0.5000000000000001]
+Result: [0.3571428571428573, 0.0, 0.357142857142857, 0.28571428571428575, 0.5000000000000001]
+Cur strategy:
+  abra_bide: 35.714%
+  abra_counter: 35.714%
+  abra_substitute: 28.571%
+Adding strategy aerodactyl_dragonrage, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@1e6d1014, 0.4999999999999982]
+Result: [0.0, 0.0, 0.0, 0.0, 1.0, 0.4999999999999982]
+Cur strategy:
+  aerodactyl_dragonrage: 100%
+Adding strategy abra_psychic, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@76707e36, 0.5000000000000001]
+Result: [0.0, 0.3658536585365856, 0.0, 0.36585365853658525, 0.0, 0.26829268292682923, 0.5000000000000001]
+Cur strategy:
+  abra_bodyslam: 36.585%
+  abra_psychic: 36.585%
+  aerodactyl_dragonrage: 26.829%
+Adding strategy alakazam_seismictoss, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@614ddd49, 0.49999999999999944]
+Result: [0.0, 0.0, 0.33333333333333315, 0.3333333333333337, 0.0, 0.0, 0.3333333333333331, 0.49999999999999944]
+Cur strategy:
+  abra_psychic: 33.333%
+  abra_counter: 33.333%
+  alakazam_seismictoss: 33.333%
+Adding strategy arcanine_bodyslam, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@1f554b06, 0.4999999999999981]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.4999999999999981]
+Cur strategy:
+  arcanine_bodyslam: 100%
+Adding strategy blastoise_surf, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@694e1548, 0.49999999999999867]
+Result: [0.0, 0.0, 0.0, 2.696916763985273E-15, 0.0, 0.0, 0.49999999999999867, 0.0, 0.4999999999999986, 0.49999999999999867]
+Cur strategy:
+  alakazam_seismictoss: 50%
+  blastoise_surf: 50%
+  abra_psychic: 0%
+Adding strategy chansey_bide, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@1c3a4799, 0.4999999999999981]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.49999999999999867, 0.0, 0.5000000000000013, 0.4999999999999981]
+Cur strategy:
+  chansey_bide: 50%
+  arcanine_bodyslam: 50%
+Adding strategy gastly_toxic, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@131276c2, 0.5000000000000007]
+Result: [0.0, 0.0, 0.0, 6.3606527452483634E-15, 0.0, 0.0, 0.33333333333332776, 0.0, 0.0, 0.3333333333333351, 0.33333333333333137, 0.5000000000000007]
+Cur strategy:
+  chansey_bide: 33.333%
+  gastly_toxic: 33.333%
+  alakazam_seismictoss: 33.333%
+  abra_psychic: 0%
+Adding strategy dodrio_drillpeck, which has 1.0000000000000002 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@26aa12dd, 0.500000000000003]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4545454545454545, 0.09090909090909477, 0.45454545454545114, 0.0, 0.500000000000003]
+Cur strategy:
+  blastoise_surf: 45.455%
+  dodrio_drillpeck: 45.455%
+  chansey_bide: 9.091%
+Adding strategy lapras_icebeam, which has 0.963636363636362 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@3fd7a715, 0.5000000000000046]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9999999999999969, 0.5000000000000046]
+Cur strategy:
+  lapras_icebeam: 100%
+Adding strategy cloyster_clamp, which has 1.0 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@711f39f9, 0.5000000000000022]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3702770780856428, 0.012594458438283359, 1.2878027779340298E-16, 0.0, 0.37783375314861456, 0.0, 0.0, 0.23929471032745667, 0.5000000000000022]
+Cur strategy:
+  cloyster_clamp: 37.783%
+  alakazam_seismictoss: 37.028%
+  lapras_icebeam: 23.929%
+  arcanine_bodyslam: 1.259%
+  blastoise_surf: 0%
+Adding strategy mewtwo_thunderbolt, which has 0.9691855583543247 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@71bbf57e, 0.500000000000004]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.48387096774193283, 0.016129032258058416, 0.006451612903229955, 0.00967741935483996, 0.0, 0.4838709677419354, 0.500000000000004]
+Cur strategy:
+  mewtwo_thunderbolt: 48.387%
+  chansey_bide: 48.387%
+  cloyster_clamp: 1.613%
+  gastly_toxic: 0.968%
+  dodrio_drillpeck: 0.645%
+Adding strategy dugtrio_fissure, which has 0.9843010752688162 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@7f13d6e, 0.5000000000000028]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.03275109170305702, 0.25982532751091564, 0.3635371179039294, 0.0, 0.08187772925764175, 0.2620087336244527, 0.5000000000000028]
+Cur strategy:
+  dugtrio_fissure: 36.354%
+  mewtwo_thunderbolt: 26.201%
+  dodrio_drillpeck: 25.983%
+  lapras_icebeam: 8.188%
+  cloyster_clamp: 3.275%
+Adding strategy mewtwo_bodyslam, which has 0.8664847161572055 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@51cdd8a, 0.5000000000000008]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.177434030937216, 0.2593266606005451, 0.07097361237488731, 0.35850773430391103, 0.13375796178343885, 0.5000000000000008]
+Cur strategy:
+  mewtwo_bodyslam: 35.851%
+  gastly_toxic: 25.933%
+  dugtrio_fissure: 17.743%
+  mewtwo_thunderbolt: 13.376%
+  lapras_icebeam: 7.097%
+Adding strategy golem_earthquake, which has 0.8994540491355766 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@d44fc21, 0.5000000000000093]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.08638996138996191, 0.0, 0.22080115830116462, 0.0, 0.0, 0.024855212355207056, 0.2553088803088852, 0.0651544401544282, 0.3330115830115759, 0.01447876447877337, 0.5000000000000093]
+Cur strategy:
+  mewtwo_bodyslam: 33.301%
+  golem_earthquake: 25.531%
+  cloyster_clamp: 22.08%
+  blastoise_surf: 8.639%
+  lapras_icebeam: 6.515%
+  gastly_toxic: 2.486%
+  mewtwo_thunderbolt: 1.448%
+Adding strategy mewtwo_recover, which has 0.8976833976834124 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@23faf8f2, 0.500000000000005]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.10902096813643805, 0.0, 0.0, 0.0463611500233493, 0.07304382629577469, 0.0, 0.24116692237564522, 0.16305338758810772, 0.18831298779267336, 0.1790407577880061, 0.500000000000005]
+Cur strategy:
+  lapras_icebeam: 24.117%
+  mewtwo_recover: 18.831%
+  mewtwo_thunderbolt: 17.904%
+  mewtwo_bodyslam: 16.305%
+  chansey_bide: 10.902%
+  gastly_toxic: 7.304%
+  dugtrio_fissure: 4.636%
+Adding strategy kabutops_slash, which has 0.6588782899369257 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@2d6eabae, 0.5000000000000023]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.08105727196545442, 0.032112494954236154, 0.0, 0.010939326978647456, 0.004326162732914307, 0.133032571367571, 0.17963513491959837, 0.13697715820431278, 0.0, 0.21393647681527594, 0.2079834020619831, 0.5000000000000023]
+Cur strategy:
+  mewtwo_recover: 21.394%
+  mewtwo_thunderbolt: 20.798%
+  kabutops_slash: 17.964%
+  lapras_icebeam: 13.698%
+  golem_earthquake: 13.303%
+  chansey_bide: 8.106%
+  cloyster_clamp: 3.211%
+  dugtrio_fissure: 1.094%
+  gastly_toxic: 0.433%
+Adding strategy victreebel_razorleaf, which has 0.8309231478334652 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@4e7dc304, 0.49999999999999956]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.049833887043188765, 0.14285714285713755, 0.0, 0.0, 0.17957684909948882, 0.1633152649064552, 0.0, 0.24689631054379868, 0.013638748032877596, 0.0, 0.2038817975170524, 0.49999999999999956]
+Cur strategy:
+  mewtwo_bodyslam: 24.69%
+  victreebel_razorleaf: 20.388%
+  golem_earthquake: 17.958%
+  kabutops_slash: 16.332%
+  dodrio_drillpeck: 14.286%
+  cloyster_clamp: 4.983%
+  mewtwo_recover: 1.364%
+Adding strategy articuno_blizzard, which has 0.8405432185113932 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@64729b1e, 0.49999999999999584]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.12793667002702203, 0.0, 0.16588454493982457, 0.007542156260854794, 0.0, 0.04744889110948437, 0.0, 0.06300559809931024, 0.07860624280460735, 0.08898140338497726, 0.09475443401363831, 0.08481207376049546, 0.18924196356492792, 0.051786022034851414, 0.49999999999999584]
+Cur strategy:
+  mewtwo_thunderbolt: 18.924%
+  chansey_bide: 16.588%
+  articuno_blizzard: 12.794%
+  mewtwo_bodyslam: 9.475%
+  lapras_icebeam: 8.898%
+  mewtwo_recover: 8.481%
+  kabutops_slash: 7.861%
+  golem_earthquake: 6.301%
+  victreebel_razorleaf: 5.179%
+  dugtrio_fissure: 4.745%
+  cloyster_clamp: 0.754%
+Adding strategy mewtwo_bide, which has 0.7581413528860004 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@10bbd20a, 0.49999999999999317]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014710422606826302, 0.0, 0.0, 0.0, 0.0, 0.0, 0.17948531681891666, 0.02724152334599035, 0.0, 0.0, 0.3397017961244455, 0.07055554546609191, 0.0, 0.22501498283784457, 0.14329041279988455, 0.49999999999999317]
+Cur strategy:
+  mewtwo_bide: 33.97%
+  mewtwo_thunderbolt: 22.501%
+  gastly_toxic: 17.949%
+  victreebel_razorleaf: 14.329%
+  mewtwo_bodyslam: 7.056%
+  golem_earthquake: 2.724%
+  articuno_blizzard: 1.471%
+Adding strategy chansey_seismictoss, which has 0.8173909885040853 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@48503868, 0.49999999999999706]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.02568849023660842, 0.0, 0.0, 0.036086058811133, 0.0544563845105446, 0.0, 0.0, 0.09280760533671564, 0.08425015832537792, 0.0, 0.1277156213021276, 0.15719874002647977, 0.21944161594901623, 0.03883637219875966, 0.10429968273955986, 0.05921927056367268, 0.49999999999999706]
+Cur strategy:
+  mewtwo_bodyslam: 21.944%
+  mewtwo_bide: 15.72%
+  lapras_icebeam: 12.772%
+  mewtwo_thunderbolt: 10.43%
+  gastly_toxic: 9.281%
+  golem_earthquake: 8.425%
+  victreebel_razorleaf: 5.922%
+  cloyster_clamp: 5.446%
+  mewtwo_recover: 3.884%
+  chansey_seismictoss: 3.609%
+  articuno_blizzard: 2.569%
+Adding strategy mewtwo_fireblast, which has 0.692118814834907 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@6895a785, 0.4999999999999954]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.15990149507777565, 0.12349330323460979, 0.0, 0.0, 0.0, 0.0726604577984118, 0.1320984003009804, 0.0, 0.15943975325481552, 0.0, 0.1534421394238876, 0.08355917437745974, 0.10497836151064821, 0.010426915021401292, 0.4999999999999954]
+Cur strategy:
+  chansey_seismictoss: 15.99%
+  mewtwo_bide: 15.944%
+  mewtwo_fireblast: 15.344%
+  kabutops_slash: 13.21%
+  cloyster_clamp: 12.349%
+  mewtwo_thunderbolt: 10.498%
+  mewtwo_recover: 8.356%
+  golem_earthquake: 7.266%
+  victreebel_razorleaf: 1.043%
+Adding strategy mewtwo_psychic, which has 0.6614224599002264 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@184f6be2, 0.4999999999999934]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.08673469387756164, 0.0, 0.0, 0.0, 0.0, 0.0, 0.12244897959183737, 0.0, 0.29081632653063083, 0.08163265306126045, 0.27040816326525274, 0.0833333333333181, 0.0, 0.06462585034012636, 0.0, 0.4999999999999934]
+Cur strategy:
+  mewtwo_bide: 29.082%
+  mewtwo_fireblast: 27.041%
+  kabutops_slash: 12.245%
+  chansey_seismictoss: 8.673%
+  mewtwo_psychic: 8.333%
+  mewtwo_bodyslam: 8.163%
+  mewtwo_thunderbolt: 6.463%
+Adding strategy mewtwo_blizzard, which has 0.6250566893424024 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@56aac163, 0.49999999999999306]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.013086150313068149, 0.04880420644064103, 0.06404341402822686, 0.0, 0.0, 0.0, 0.0, 0.05611479344464871, 0.09206109922164044, 0.1483539632350373, 0.17792263819448806, 0.059585621803537665, 0.1256735889903316, 0.0, 0.10248401112019066, 0.11187051320817953, 0.0, 0.49999999999999306]
+Cur strategy:
+  mewtwo_blizzard: 17.792%
+  mewtwo_bide: 14.835%
+  mewtwo_fireblast: 12.567%
+  mewtwo_thunderbolt: 11.187%
+  mewtwo_recover: 10.248%
+  lapras_icebeam: 9.206%
+  cloyster_clamp: 6.404%
+  mewtwo_bodyslam: 5.959%
+  kabutops_slash: 5.611%
+  chansey_seismictoss: 4.88%
+  chansey_bide: 1.309%
+Adding strategy dewgong_toxic, which has 0.5920205215061745 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@1f7030a6, 0.49999999999999334]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.12577775269092797, 0.0, 0.0, 0.0, 0.015826426006580588, 0.07326180686114821, 0.0, 0.09039950328035405, 0.27660424382681126, 0.12166157934271754, 0.08128139776215103, 0.0, 0.0793275180082632, 0.1358597722210371, 0.0, 0.49999999999999334]
+Cur strategy:
+  mewtwo_blizzard: 27.66%
+  mewtwo_thunderbolt: 13.586%
+  dewgong_toxic: 12.578%
+  mewtwo_bodyslam: 12.166%
+  mewtwo_bide: 9.04%
+  mewtwo_fireblast: 8.128%
+  mewtwo_recover: 7.933%
+  kabutops_slash: 7.326%
+  golem_earthquake: 1.583%
+Adding strategy rhydon_seismictoss, which has 0.6273473694265665 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@5a1c0542, 0.49999999999999406]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05460271918622931, 0.0, 0.0, 0.06053801524010573, 0.0, 0.0, 0.0, 0.0, 0.0681863554412506, 0.03549686192808814, 0.08759889454950186, 0.2762979077789007, 0.11302824913960269, 0.13150268588053232, 0.0, 0.024944539196521526, 0.13067872694327096, 0.017125044715985197, 0.0, 0.49999999999999406]
+Cur strategy:
+  mewtwo_blizzard: 27.63%
+  mewtwo_fireblast: 13.15%
+  mewtwo_thunderbolt: 13.068%
+  mewtwo_bodyslam: 11.303%
+  mewtwo_bide: 8.76%
+  kabutops_slash: 6.819%
+  dewgong_toxic: 6.054%
+  chansey_bide: 5.46%
+  lapras_icebeam: 3.55%
+  mewtwo_recover: 2.494%
+  rhydon_seismictoss: 1.713%
+Adding strategy slowbro_rest, which has 0.5994444221720941 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@396f6598, 0.49999999999999334]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0778894056006642, 0.04327011114600188, 0.04445083971230324, 0.04430565161323219, 0.0, 0.0, 0.012955380902070197, 0.0, 0.03103077885240524, 0.007712299227152433, 0.13353323124109376, 0.1718109111377497, 0.12747013679727218, 0.09001866752979451, 0.0, 0.04817751764567574, 0.09202521300638186, 0.0204006709136638, 0.05494918467453063, 0.0, 0.49999999999999334]
+Cur strategy:
+  mewtwo_blizzard: 17.181%
+  mewtwo_bide: 13.353%
+  mewtwo_bodyslam: 12.747%
+  mewtwo_thunderbolt: 9.203%
+  mewtwo_fireblast: 9.002%
+  chansey_bide: 7.789%
+  slowbro_rest: 5.495%
+  mewtwo_recover: 4.818%
+  cloyster_clamp: 4.445%
+  dewgong_toxic: 4.431%
+  chansey_seismictoss: 4.327%
+  kabutops_slash: 3.103%
+  rhydon_seismictoss: 2.04%
+  gastly_toxic: 1.296%
+  lapras_icebeam: 0.771%
+Adding strategy rhydon_earthquake, which has 0.5685416525643046 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@394e1a0f, 0.49999999999999983]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.024124646183553318, 0.05567899782596922, 0.02778419840717722, 0.04052554841390292, 0.0, 0.0, 0.0, 0.0, 0.044394817293845965, 0.055505115468811816, 0.1430541118749239, 0.1735190811705065, 0.10482402600191384, 0.10737250376725838, 0.0, 0.0615340420604155, 0.09841425270740428, 0.011736654985582557, 0.009557111733505368, 0.04197489210520817, 0.0, 0.49999999999999983]
+Cur strategy:
+  mewtwo_blizzard: 17.352%
+  mewtwo_bide: 14.305%
+  mewtwo_fireblast: 10.737%
+  mewtwo_bodyslam: 10.482%
+  mewtwo_thunderbolt: 9.841%
+  mewtwo_recover: 6.153%
+  chansey_seismictoss: 5.568%
+  lapras_icebeam: 5.551%
+  kabutops_slash: 4.439%
+  slowbro_rest: 4.197%
+  dewgong_toxic: 4.053%
+  cloyster_clamp: 2.778%
+  chansey_bide: 2.412%
+  rhydon_earthquake: 1.174%
+  rhydon_seismictoss: 0.956%
+Adding strategy chansey_rest, which has 0.5804716059720372 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@27a5f880, 0.4999999999999902]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.04361728522355339, 0.053539063124086156, 0.0, 0.045413971580178174, 0.042124120502190845, 0.0, 0.0, 0.02443898110563874, 0.0, 0.05458334611221988, 0.0425941423267948, 0.1444648865139836, 0.14895405153681582, 0.11234235337020446, 0.08757606095065779, 0.03494718582603451, 0.05885873761892127, 0.04753699671789843, 9.125631198092302E-4, 0.03090642658697435, 0.027189827784271967, 0.0, 0.4999999999999902]
+Cur strategy:
+  mewtwo_blizzard: 14.895%
+  mewtwo_bide: 14.446%
+  mewtwo_bodyslam: 11.234%
+  mewtwo_fireblast: 8.758%
+  mewtwo_recover: 5.886%
+  kabutops_slash: 5.458%
+  chansey_rest: 5.354%
+  mewtwo_thunderbolt: 4.754%
+  cloyster_clamp: 4.541%
+  chansey_bide: 4.362%
+  lapras_icebeam: 4.259%
+  dewgong_toxic: 4.212%
+  mewtwo_psychic: 3.495%
+  rhydon_seismictoss: 3.091%
+  slowbro_rest: 2.719%
+  gastly_toxic: 2.444%
+  rhydon_earthquake: 0.091%
+Adding strategy lapras_rest, which has 0.5443738542350156 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@1d29cf23, 0.499999999999992]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.015760908347704747, 0.08005134782456355, 0.0, 0.01074637658669125, 0.03576646481415988, 0.0, 0.0, 0.0375431027602718, 0.0, 0.03763314898152547, 0.028828405653245386, 0.040978553718226035, 0.23863632690411862, 0.14744494626387092, 0.10029450058224679, 0.14984183551998487, 0.029208784112361417, 0.04561463537942184, 0.0, 0.0, 0.0016506625516119616, 0.0, 0.0, 0.499999999999992]
+Cur strategy:
+  mewtwo_bide: 23.864%
+  mewtwo_fireblast: 14.984%
+  mewtwo_blizzard: 14.744%
+  mewtwo_bodyslam: 10.029%
+  chansey_rest: 8.005%
+  mewtwo_recover: 4.561%
+  lapras_rest: 4.098%
+  kabutops_slash: 3.763%
+  gastly_toxic: 3.754%
+  dewgong_toxic: 3.577%
+  mewtwo_psychic: 2.921%
+  lapras_icebeam: 2.883%
+  chansey_bide: 1.576%
+  cloyster_clamp: 1.075%
+  rhydon_seismictoss: 0.165%
+Adding strategy gengar_bide, which has 0.6001848813443363 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@5f282abb, 0.49999999999999556]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.04322690857459931, 0.050788847675295415, 0.0, 0.03948780389838562, 0.054348963693426636, 0.0, 0.0, 0.0, 0.03431464219816098, 0.0, 0.059192776285286144, 0.03566931595820079, 0.01059175068458032, 0.12537567422572315, 0.1725621431958711, 0.08712297317831573, 0.1001439068173139, 0.025169066162893917, 0.06225574374037292, 0.06703090640947723, 0.01786414163348309, 0.014854435668618372, 0.0, 0.0, 0.49999999999999556]
+Cur strategy:
+  mewtwo_blizzard: 17.256%
+  mewtwo_bide: 12.538%
+  mewtwo_fireblast: 10.014%
+  mewtwo_bodyslam: 8.712%
+  mewtwo_thunderbolt: 6.703%
+  mewtwo_recover: 6.226%
+  kabutops_slash: 5.919%
+  dewgong_toxic: 5.435%
+  chansey_rest: 5.079%
+  chansey_bide: 4.323%
+  cloyster_clamp: 3.949%
+  lapras_icebeam: 3.567%
+  gengar_bide: 3.431%
+  mewtwo_psychic: 2.517%
+  rhydon_earthquake: 1.786%
+  rhydon_seismictoss: 1.485%
+  lapras_rest: 1.059%
+Adding strategy lapras_bide, which has 0.5314422436279463 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@167fdd33, 0.4999999999999555]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05119972154344757, 0.05144507343067684, 0.009517101257771632, 0.05350028724967454, 0.014270003360936158, 0.0, 0.0, 0.02800076869422239, 1.3522900164925213E-4, 0.0, 0.054450850502902284, 0.08114248126086417, 0.0, 0.0, 0.1077893816287962, 0.14593203037367947, 0.08146386450485338, 0.16147682112569436, 0.016753512313662646, 0.05816549727556613, 0.050137488666015625, 0.0, 0.03461988780965839, 0.0, 0.0, 0.4999999999999555]
+Cur strategy:
+  mewtwo_fireblast: 16.148%
+  mewtwo_blizzard: 14.593%
+  mewtwo_bide: 10.779%
+  mewtwo_bodyslam: 8.146%
+  lapras_bide: 8.114%
+  mewtwo_recover: 5.817%
+  kabutops_slash: 5.445%
+  cloyster_clamp: 5.35%
+  chansey_rest: 5.145%
+  chansey_bide: 5.12%
+  mewtwo_thunderbolt: 5.014%
+  rhydon_seismictoss: 3.462%
+  gastly_toxic: 2.8%
+  mewtwo_psychic: 1.675%
+  dewgong_toxic: 1.427%
+  chansey_seismictoss: 0.952%
+  gengar_bide: 0.014%
+Adding strategy omastar_icebeam, which has 0.5433400505837568 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@1e965684, 0.499999999999964]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.026246743713812068, 0.01699184366752406, 0.05055350499417614, 0.04149621632248517, 0.0398063518944004, 0.0, 0.0, 0.0, 0.011827937659241863, 0.0, 0.03991575869707471, 0.061797588571872286, 0.0, 0.017251883276013968, 0.09439937022958472, 0.1645080193161801, 0.10701887955482264, 0.12225716963966925, 0.0032822205570169904, 0.06792249256316012, 0.06585500717494211, 0.029209993979618043, 0.02364950224940792, 0.016009515939057077, 0.0, 0.0, 0.499999999999964]
+Cur strategy:
+  mewtwo_blizzard: 16.451%
+  mewtwo_fireblast: 12.226%
+  mewtwo_bodyslam: 10.702%
+  mewtwo_bide: 9.44%
+  mewtwo_recover: 6.792%
+  mewtwo_thunderbolt: 6.586%
+  lapras_bide: 6.18%
+  chansey_seismictoss: 5.055%
+  cloyster_clamp: 4.15%
+  kabutops_slash: 3.992%
+  dewgong_toxic: 3.981%
+  omastar_icebeam: 2.921%
+  chansey_bide: 2.625%
+  rhydon_earthquake: 2.365%
+  lapras_rest: 1.725%
+  chansey_rest: 1.699%
+  rhydon_seismictoss: 1.601%
+  gengar_bide: 1.183%
+  mewtwo_psychic: 0.328%
+Adding strategy snorlax_bodyslam, which has 0.522874280849403 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@4d95d2a2, 0.4999999999999967]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.04969084190187986, 0.03140393944665361, 0.0, 0.009901066989467243, 0.08321635759152729, 0.0, 0.0, 0.0, 0.0035372997175922576, 0.0, 0.018157897473423102, 0.02683087084392987, 0.0, 0.0, 0.12885692270912727, 0.15740059853701738, 0.06789702690552937, 0.12482565392784069, 0.03519181766440578, 0.03749420389939148, 0.08405238172230663, 0.05346400294131851, 0.033265063667870944, 0.0, 0.0, 0.054814054060713636, 0.0, 0.4999999999999967]
+Cur strategy:
+  mewtwo_blizzard: 15.74%
+  mewtwo_bide: 12.886%
+  mewtwo_fireblast: 12.483%
+  mewtwo_thunderbolt: 8.405%
+  dewgong_toxic: 8.322%
+  mewtwo_bodyslam: 6.79%
+  snorlax_bodyslam: 5.481%
+  omastar_icebeam: 5.346%
+  chansey_bide: 4.969%
+  mewtwo_recover: 3.749%
+  mewtwo_psychic: 3.519%
+  rhydon_earthquake: 3.327%
+  chansey_rest: 3.14%
+  lapras_bide: 2.683%
+  kabutops_slash: 1.816%
+  cloyster_clamp: 0.99%
+  gengar_bide: 0.354%
+Adding strategy vaporeon_hydropump, which has 0.5363745470140939 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@53f65459, 0.49999999999999484]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05431343072704825, 0.029247220200415577, 0.0, 0.02951709746512664, 0.07415952542248937, 0.0, 0.0, 0.0, 0.008866245139728016, 0.0, 0.03392001887621284, 4.286715957684831E-4, 0.02726040760353652, 0.007502864987808104, 0.12341769739991613, 0.1337201985231542, 0.10251415240626115, 0.0873885607513419, 0.02857475436207877, 0.05926994162086045, 0.07506972646509014, 0.03642744708829056, 0.027843457397195355, 0.03050079522424745, 0.0, 0.00738764762476793, 0.022670139118660136, 0.0, 0.49999999999999484]
+Cur strategy:
+  mewtwo_blizzard: 13.372%
+  mewtwo_bide: 12.342%
+  mewtwo_bodyslam: 10.251%
+  mewtwo_fireblast: 8.739%
+  mewtwo_thunderbolt: 7.507%
+  dewgong_toxic: 7.416%
+  mewtwo_recover: 5.927%
+  chansey_bide: 5.431%
+  omastar_icebeam: 3.643%
+  kabutops_slash: 3.392%
+  rhydon_seismictoss: 3.05%
+  cloyster_clamp: 2.952%
+  chansey_rest: 2.925%
+  mewtwo_psychic: 2.857%
+  rhydon_earthquake: 2.784%
+  lapras_icebeam: 2.726%
+  vaporeon_hydropump: 2.267%
+  gengar_bide: 0.887%
+  lapras_rest: 0.75%
+  snorlax_bodyslam: 0.739%
+  lapras_bide: 0.043%
+Adding strategy mewtwo_icebeam, which has 0.5218926046626556 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@3b088d51, 0.4999999999999921]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.031631503690097484, 0.016898288025321388, 0.03687092937445318, 0.049784409347385546, 0.03605267297538074, 0.0, 0.0, 0.0, 0.0, 0.0, 0.04534806574460495, 0.074499643290155, 0.0, 0.007110533330497296, 0.06917081558873779, 0.13967172207113004, 0.09607317424278082, 0.12031283490084489, 0.03541306315991695, 0.005288769111075621, 0.07003117298659298, 0.08113583784330741, 0.015759084659077723, 0.02243778565501021, 0.03183710065883082, 0.0, 0.009662797432914566, 0.005009795911887353, 0.0, 0.4999999999999921]
+Cur strategy:
+  mewtwo_blizzard: 13.967%
+  mewtwo_fireblast: 12.031%
+  mewtwo_bodyslam: 9.607%
+  mewtwo_thunderbolt: 8.114%
+  lapras_bide: 7.45%
+  mewtwo_recover: 7.003%
+  mewtwo_bide: 6.917%
+  cloyster_clamp: 4.978%
+  kabutops_slash: 4.535%
+  chansey_seismictoss: 3.687%
+  dewgong_toxic: 3.605%
+  mewtwo_icebeam: 3.541%
+  rhydon_seismictoss: 3.184%
+  chansey_bide: 3.163%
+  rhydon_earthquake: 2.244%
+  chansey_rest: 1.69%
+  omastar_icebeam: 1.576%
+  snorlax_bodyslam: 0.966%
+  lapras_rest: 0.711%
+  mewtwo_psychic: 0.529%
+  vaporeon_hydropump: 0.501%
+Adding strategy mewtwo_rest, which has 0.5077052732851333 effectiveness vs. the mixed strat
+Starting the optimizer...
+Elapsed: 0 ms
+Result: [[D@1786dec2, 0.49999999999999195]
+Result: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.03054331779723311, 0.013200870457290053, 0.040224539856736574, 0.052102326516239125, 0.031246645866497544, 0.0, 0.0, 0.0, 0.0, 0.0, 0.04502049902131371, 0.08499609039051369, 0.0, 0.0, 0.06087395937287568, 0.13555194620890573, 0.09114508379041909, 0.1224769469190226, 0.04515271153375707, 0.0021750394453793264, 0.07142239139205728, 0.009227946669992267, 0.0841096691130197, 0.007505728203255189, 0.022675186044763106, 0.02987062384711435, 0.0, 0.01487894861204962, 0.005599528941568192, 0.0, 0.49999999999999195]
+Cur strategy:
+  mewtwo_blizzard: 13.555%
+  mewtwo_fireblast: 12.248%
+  mewtwo_bodyslam: 9.115%
+  lapras_bide: 8.5%
+  mewtwo_thunderbolt: 8.411%
+  mewtwo_recover: 7.142%
+  mewtwo_bide: 6.087%
+  cloyster_clamp: 5.21%
+  mewtwo_icebeam: 4.515%
+  kabutops_slash: 4.502%
+  chansey_seismictoss: 4.022%
+  dewgong_toxic: 3.125%
+  chansey_bide: 3.054%
+  rhydon_seismictoss: 2.987%
+  rhydon_earthquake: 2.268%
+  snorlax_bodyslam: 1.488%
+  chansey_rest: 1.32%
+  mewtwo_rest: 0.923%
+  omastar_icebeam: 0.751%
+  vaporeon_hydropump: 0.56%
+  mewtwo_psychic: 0.218%
+Looks like we're done here
+Best pure-strat effectiveness is mewtwo_recover with effectiveness 0.5000000000000143
+Ran computations in 384 ms
+
+Process finished with exit code 0

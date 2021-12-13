@@ -1,6 +1,8 @@
 package net.alloyggp.opom
 
 import java.io.File
+import java.util.*
+import kotlin.collections.ArrayList
 
 fun loadGen1Results(): MatchupResultStore<String> {
     val resultsFolder = File("../Pokemon-Showdown/collectedStats")
@@ -8,7 +10,8 @@ fun loadGen1Results(): MatchupResultStore<String> {
         error("Folder not found")
     }
     val movesets = ArrayList<String>()
-    for (file in resultsFolder.listFiles()) {
+    // Deterministic (remove file-system nondeterminism) but unpredictable
+    for (file in resultsFolder.listFiles().sortedBy { it.name }.shuffled(Random(0))) {
 //        println(file)
         movesets.add(file.name)
     }
