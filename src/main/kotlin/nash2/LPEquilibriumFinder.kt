@@ -14,23 +14,65 @@ fun main() {
     println("Calculating...")
     val startTime2 = System.currentTimeMillis()
 
+    val strategy = findBestStrategy(mrs, setOf())
+    strategy.print()
+    println("Ran computations in ${System.currentTimeMillis() - startTime2} ms")
+
+//    val curMixedStrategyIndices = TreeSet<Int>()
+//    curMixedStrategyIndices.add(0)
+//
+//    while (true) {
+//        val strategy = solveForNashEquilibriumAmong(curMixedStrategyIndices.toList(), mrs)
+//        strategy.print()
+//
+////        for (index in ArrayList(curMixedStrategyIndices)) {
+////            if (strategy.getChoiceNormalizedWeight(index) == 0.0) {
+////                println("Removing ${movesets[index]} from the strategy")
+////                curMixedStrategyIndices.remove(index)
+////            }
+////        }
+//
+//        var bestPureStratIndex = -1
+//        var bestPureStratEffectiveness = -1.0
+//        for (pureStratIndex in movesets.indices) {
+//            var effectivenessAgainstCurStrat = 0.0
+//            for (mixedStratIndex in curMixedStrategyIndices) {
+//                effectivenessAgainstCurStrat += strategy.getChoiceNormalizedWeight(mixedStratIndex) *
+//                        mrs.getMatchupResultByIndices(pureStratIndex, mixedStratIndex).getLeftWinningRate()
+//            }
+//            if (effectivenessAgainstCurStrat > bestPureStratEffectiveness) {
+//                bestPureStratIndex = pureStratIndex
+//                bestPureStratEffectiveness = effectivenessAgainstCurStrat
+//            }
+//        }
+//
+//        if (curMixedStrategyIndices.contains(bestPureStratIndex)) {
+//            println("Looks like we're done here")
+//            println("Best pure-strat effectiveness is ${movesets[bestPureStratIndex]} with effectiveness $bestPureStratEffectiveness")
+//            println("Ran computations in ${System.currentTimeMillis() - startTime2} ms")
+//            return
+//        }
+//        curMixedStrategyIndices.add(bestPureStratIndex)
+//        println("Adding strategy ${movesets[bestPureStratIndex]}, which has ${bestPureStratEffectiveness} effectiveness vs. the mixed strat")
+//    }
+}
+
+// Iteratively add to the subset used for NE solving
+fun findBestStrategy(mrs: MatchupResultStore<String>, banList: Set<Int>): Strategy {
+    val movesets = mrs.contestants
+
     val curMixedStrategyIndices = TreeSet<Int>()
-    curMixedStrategyIndices.add(0)
+    curMixedStrategyIndices.add(movesets.indices.filterNot { banList.contains(it) }.first())
 
     while (true) {
         val strategy = solveForNashEquilibriumAmong(curMixedStrategyIndices.toList(), mrs)
-        strategy.print()
-
-//        for (index in ArrayList(curMixedStrategyIndices)) {
-//            if (strategy.getChoiceNormalizedWeight(index) == 0.0) {
-//                println("Removing ${movesets[index]} from the strategy")
-//                curMixedStrategyIndices.remove(index)
-//            }
-//        }
 
         var bestPureStratIndex = -1
         var bestPureStratEffectiveness = -1.0
         for (pureStratIndex in movesets.indices) {
+            if (banList.contains(pureStratIndex)) {
+                continue
+            }
             var effectivenessAgainstCurStrat = 0.0
             for (mixedStratIndex in curMixedStrategyIndices) {
                 effectivenessAgainstCurStrat += strategy.getChoiceNormalizedWeight(mixedStratIndex) *
@@ -43,13 +85,9 @@ fun main() {
         }
 
         if (curMixedStrategyIndices.contains(bestPureStratIndex)) {
-            println("Looks like we're done here")
-            println("Best pure-strat effectiveness is ${movesets[bestPureStratIndex]} with effectiveness $bestPureStratEffectiveness")
-            println("Ran computations in ${System.currentTimeMillis() - startTime2} ms")
-            return
+            return strategy
         }
         curMixedStrategyIndices.add(bestPureStratIndex)
-        println("Adding strategy ${movesets[bestPureStratIndex]}, which has ${bestPureStratEffectiveness} effectiveness vs. the mixed strat")
     }
 }
 
@@ -148,15 +186,14 @@ maximum number of iterations: MaxIter - optional, default: Integer.MAX_VALUE
 //    val scissorsDoesntBeatUs = LinearConstraint(doubleArrayOf(0.0, 1.0, 0.5, -1.0), Relationship.LEQ, 0.5)
     val allConstraints = LinearConstraintSet(constraints)
 //        val data = listOf(objectiveFunction, allConstraints)
-    println("Starting the optimizer...")
+//    println("Starting the optimizer...")
     val startTime = System.nanoTime()
     val result = solver.optimize(objectiveFunction, allConstraints, NonNegativeConstraint(true))
-    println("Elapsed: ${(System.nanoTime() - startTime) / 1_000_000} ms")
-    println("Result: $result")
-    val resultPoint = result.point
-    println("Result: ${Arrays.toString(resultPoint)}")
+//    println("Elapsed: ${(System.nanoTime() - startTime) / 1_000_000} ms")
+//    println("Result: $result")
+    //    println("Result: ${Arrays.toString(resultPoint)}")
     val resultStrat = Strategy(mrs.contestants)
-    for ((arrayIndex, probability) in resultPoint.dropLast(1).withIndex()) {
+    for ((arrayIndex, probability) in result.point.dropLast(1).withIndex()) {
         val stratIndex = mixedStrategyIndices[arrayIndex]
         resultStrat.setChoiceUnnormalizedWeight(stratIndex, probability)
     }
