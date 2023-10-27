@@ -92,4 +92,8 @@ data class MatchupResult(val leftWins: Int, val rightWins: Int, val draws: Int) 
         val total = (leftWins + rightWins + draws).toDouble()
         return (leftWins + (draws / 2.0)) / total
     }
+
+    fun getSamples(): Int {
+        return leftWins + rightWins + draws
+    }
 }

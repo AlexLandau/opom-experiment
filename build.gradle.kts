@@ -21,5 +21,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("net.alloyggp.opom.AppKt")
+    mainClass.set("net.alloyggp.opom.nash2.LPEquilibriumFinderKt")
 }

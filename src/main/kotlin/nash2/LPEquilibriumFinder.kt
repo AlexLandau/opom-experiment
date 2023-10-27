@@ -3,6 +3,7 @@ package net.alloyggp.opom.nash2
 import net.alloyggp.opom.MatchupResultStore
 import net.alloyggp.opom.loadGen1Results
 import org.apache.commons.math3.optim.linear.*
+import java.io.File
 import java.util.*
 
 fun main() {
@@ -15,8 +16,9 @@ fun main() {
     val startTime2 = System.currentTimeMillis()
 
     val strategy = findBestStrategy(mrs, setOf())
-    strategy.print()
     println("Ran computations in ${System.currentTimeMillis() - startTime2} ms")
+    strategy.print()
+    strategy.saveToFile(File("output" + System.currentTimeMillis()), mrs)
 
 //    val curMixedStrategyIndices = TreeSet<Int>()
 //    curMixedStrategyIndices.add(0)

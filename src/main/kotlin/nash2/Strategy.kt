@@ -1,5 +1,6 @@
 package net.alloyggp.opom.nash2
 
+import net.alloyggp.opom.MatchupResultStore
 import java.io.File
 import java.text.NumberFormat
 import java.util.*
@@ -71,17 +72,60 @@ class Strategy(private val choiceNames: List<String>) {
 //            println(")")
     }
 
-    fun saveToFile(file: File) {
+    fun saveToFile(file: File, mrs: MatchupResultStore<String>) {
         if (!file.absoluteFile.parentFile.exists()) {
             file.absoluteFile.parentFile.mkdirs()
         }
         file.bufferedWriter().use { writer ->
+            val minSampleSize = getSampleSizePropertyForChosen(this, mrs, Integer.MAX_VALUE, ::minOf)
+            val maxSampleSize = getSampleSizePropertyForChosen(this, mrs, 0, ::maxOf)
+            writer.appendLine("Min sample size (among chosen): $minSampleSize")
+            writer.appendLine("Max sample size (among chosen): $maxSampleSize")
+            writer.appendLine()
             for (index in getNonDefaultIndices()) {
                 val count = choices[index]
                 val name = choiceNames[index]
                 writer.appendLine("$index $name $count")
             }
+            writer.appendLine()
+            data class ChoiceWinProb(val choice: String, val winProb: Double) {}
+            val choiceWinProbs = ArrayList<ChoiceWinProb>()
+            for (choiceIndex in mrs.contestants.indices) {
+                val winRate = getWinRateAgainstThisStrategy(mrs, choiceIndex)
+                choiceWinProbs.add(ChoiceWinProb(mrs.contestants[choiceIndex], winRate))
+            }
+            choiceWinProbs.sortByDescending { it.winProb }
+            writer.appendLine("Estimated effectiveness of pure strategies against this strategy (may use smaller sample sizes):")
+            for (cwb in choiceWinProbs) {
+                writer.appendLine("${cwb.winProb} ~ ${cwb.choice}")
+            }
         }
+    }
+
+    public fun getWinRateAgainstThisStrategy(mrs: MatchupResultStore<String>, choiceIndex: Int): Double {
+        var effectivenessAgainstCurStrat = 0.0
+        for (mixedStratIndex in this.choices.keys) {
+            effectivenessAgainstCurStrat += this.getChoiceNormalizedWeight(mixedStratIndex) *
+                                            mrs.getMatchupResultByIndices(choiceIndex, mixedStratIndex).getLeftWinningRate()
+        }
+        return effectivenessAgainstCurStrat
+    }
+
+    private fun getSampleSizePropertyForChosen(strategy: Strategy, mrs: MatchupResultStore<String>, startingValue: Int, reducer: (Int, Int) -> Int): Int {
+        var valueSoFar = startingValue
+        for (key1 in strategy.choices.keys) {
+            for (key2 in strategy.choices.keys) {
+                if (key1 == key2) {
+                    continue
+                }
+//                mrs.getMatchupIndex(key1, key2)
+                val name1 = strategy.choiceNames[key1]
+                val name2 = strategy.choiceNames[key2]
+                val samples = mrs.getMatchupResult(name1, name2).getSamples()
+                valueSoFar = reducer(valueSoFar, samples)
+            }
+        }
+        return valueSoFar
     }
 
     fun copy(): Strategy {
