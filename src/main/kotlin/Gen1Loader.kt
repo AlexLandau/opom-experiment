@@ -4,8 +4,7 @@ import java.io.File
 import java.util.*
 import kotlin.collections.ArrayList
 
-fun loadGen1Results(): MatchupResultStore<String> {
-    val resultsFolder = File("../Pokemon-Showdown/collectedStats")
+fun loadGen1Results(resultsFolder: File = File("../Pokemon-Showdown/collectedStats")): MatchupResultStore<String> {
     if (!resultsFolder.isDirectory) {
         error("Folder not found")
     }
