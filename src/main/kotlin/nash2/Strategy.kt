@@ -21,6 +21,9 @@ class Strategy(private val choiceNames: List<String>) {
     fun getChoiceUnnormalizedWeight(index: Int): Double {
         return choices[index] ?: 0.0
     }
+    fun containsIndex(index: Int): Boolean {
+        return choices.containsKey(index)
+    }
     fun getChoiceNormalizedWeight(index: Int): Double {
         val unnormalized = choices[index] ?: return 0.0
         return unnormalized / getChoicesSum()

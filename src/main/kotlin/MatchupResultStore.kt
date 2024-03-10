@@ -9,6 +9,10 @@ class MatchupResultStore<T> (val contestants: List<T>) {
         contents = Array(numMatchups * 3, { 0 })
     }
 
+    fun getContestantIndex(contestant: T): Int {
+        return contestantsIndex.getValue(contestant)
+    }
+
     fun getMatchupResult(leftContestant: T, rightContestant: T): MatchupResult {
         val i1 = contestantsIndex[leftContestant]!!
         val i2 = contestantsIndex[rightContestant]!!

@@ -1,0 +1,769 @@
+Running single-elimination tournament...
+Ran a single-elimination tournament in 45.132 seconds
+Found winner mewtwo_psychic
+Running single-elimination tournament...
+Ran a single-elimination tournament in 42.922 seconds
+Found winner mewtwo_psychic
+Running single-elimination tournament...
+Ran a single-elimination tournament in 43.021 seconds
+Found winner mewtwo_blizzard
+Running single-elimination tournament...
+Ran a single-elimination tournament in 43.02 seconds
+Found winner lapras_blizzard
+Running single-elimination tournament...
+Ran a single-elimination tournament in 44.43 seconds
+Found winner mewtwo_blizzard
+Running single-elimination tournament...
+Ran a single-elimination tournament in 44.837 seconds
+Found winner mewtwo_thunderbolt
+Running single-elimination tournament...
+Ran a single-elimination tournament in 46.037 seconds
+Found winner mewtwo_psychic
+Running single-elimination tournament...
+Ran a single-elimination tournament in 45.935 seconds
+Found winner jynx_psychic
+Running single-elimination tournament...
+Ran a single-elimination tournament in 46.705 seconds
+Found winner dewgong_icebeam
+Running single-elimination tournament...
+Ran a single-elimination tournament in 45.177 seconds
+Found winner chansey_seismictoss
+Initial set: [chansey_seismictoss, dewgong_icebeam, jynx_psychic, lapras_blizzard, mewtwo_blizzard, mewtwo_psychic, mewtwo_thunderbolt]
+Boosting among-in-group stats to 170...
+Collected statistics in 9.018 seconds
+Loaded results in 0.442 seconds
+Cur strategy:
+  mewtwo_thunderbolt: 37.626%
+  mewtwo_blizzard: 27.942%
+  chansey_seismictoss: 17.437%
+  lapras_blizzard: 14.38%
+  mewtwo_psychic: 2.615%
+Strategy members / in-group members: 5/7
+Boosting against-strategy stats to 5...
+Collected statistics in 48.525 seconds
+Loaded results in 0.349 seconds
+Best against this strategy:
+  - 0.8233073865720921: chansey_rest
+  - 0.7115736123971417: mewtwo_bodyslam
+  - 0.6371662314693988: chansey_bide
+  - 0.6241134541134539: chansey_icebeam
+  - 0.6138546917311622: mewtwo_fireblast
+  - 0.6020332640332637: nidoqueen_horndrill
+  - 0.5999191541001494: jolteon_thunderbolt
+  - 0.5981152132690593: lapras_bodyslam
+  - 0.5975883575883574: lapras_hyperbeam
+  - 0.5975883575883574: lapras_rest
+Collected statistics in 17.895 seconds
+Loaded results in 0.287 seconds
+Best against this strategy:
+  - 0.8379675920264154: chansey_rest
+  - 0.6882193958664545: chansey_bide
+  - 0.6733921976274917: mewtwo_bodyslam
+  - 0.6020332640332637: nidoqueen_horndrill
+  - 0.5999191541001494: jolteon_thunderbolt
+  - 0.5981152132690593: lapras_bodyslam
+  - 0.5975883575883574: lapras_hyperbeam
+  - 0.5975883575883574: lapras_rest
+  - 0.5975883575883574: lapras_strength
+  - 0.5772903771903771: mewtwo_megakick
+Adding CombatantWithWinRate(combatant=chansey_rest, winRate=0.8379675920264154) to in-group
+Boosting among-in-group stats to 180...
+Collected statistics in 4.242 seconds
+Loaded results in 0.319 seconds
+Cur strategy:
+  mewtwo_blizzard: 33.076%
+  mewtwo_psychic: 30.006%
+  lapras_blizzard: 13.086%
+  chansey_rest: 12.867%
+  mewtwo_thunderbolt: 10.965%
+Strategy members / in-group members: 5/8
+Boosting against-strategy stats to 5...
+Collected statistics in 3.633 seconds
+Loaded results in 0.331 seconds
+Best against this strategy:
+  - 0.7159843006405876: mewtwo_bodyslam
+  - 0.6898912748035764: mewtwo_megakick
+  - 0.6856646494755508: chansey_bide
+  - 0.660190731870251: mewtwo_recover
+  - 0.5852426308569657: mewtwo_doubleedge
+  - 0.5678903269385518: lapras_bide
+  - 0.5641186342506648: lapras_skullbash
+  - 0.5420373368184992: lapras_rest
+  - 0.5358993290631567: mewtwo_triattack
+  - 0.5319501581691: lapras_mimic
+Collected statistics in 15.164 seconds
+Loaded results in 0.297 seconds
+Best against this strategy:
+  - 0.7196998014647521: mewtwo_bodyslam
+  - 0.6945812486549877: mewtwo_recover
+  - 0.6794250146258733: chansey_bide
+  - 0.5955175979052335: mewtwo_megakick
+  - 0.5678903269385518: lapras_bide
+  - 0.5641186342506648: lapras_skullbash
+  - 0.5420373368184992: lapras_rest
+  - 0.537928153476374: mewtwo_doubleedge
+  - 0.5358993290631567: mewtwo_triattack
+  - 0.5319501581691: lapras_mimic
+Adding CombatantWithWinRate(combatant=mewtwo_bodyslam, winRate=0.7196998014647521) to in-group
+Boosting among-in-group stats to 190...
+Collected statistics in 4.054 seconds
+Loaded results in 0.304 seconds
+Cur strategy:
+  mewtwo_bodyslam: 100%
+Strategy members / in-group members: 1/9
+Boosting against-strategy stats to 5...
+Collected statistics in 3.724 seconds
+Loaded results in 0.4 seconds
+Best against this strategy:
+  - 1.0: aerodactyl_rest
+  - 1.0: chansey_counter
+  - 1.0: clefable_counter
+  - 1.0: gastly_bide
+  - 1.0: gastly_confuseray
+  - 1.0: gastly_doubleteam
+  - 1.0: gastly_dreameater
+  - 1.0: gastly_hypnosis
+  - 1.0: gastly_lick
+  - 1.0: gastly_megadrain
+Collected statistics in 40.095 seconds
+Loaded results in 0.333 seconds
+Best against this strategy:
+  - 1.0: aerodactyl_rest
+  - 1.0: chansey_counter
+  - 1.0: clefable_counter
+  - 1.0: gastly_bide
+  - 1.0: gastly_confuseray
+  - 1.0: gastly_doubleteam
+  - 1.0: gastly_dreameater
+  - 1.0: gastly_hypnosis
+  - 1.0: gastly_lick
+  - 1.0: gastly_megadrain
+Adding CombatantWithWinRate(combatant=haunter_hypnosis, winRate=1.0) to in-group
+Boosting among-in-group stats to 200...
+Collected statistics in 26.176 seconds
+Loaded results in 0.497 seconds
+Cur strategy:
+  mewtwo_bodyslam: 45.567%
+  mewtwo_thunderbolt: 20.435%
+  mewtwo_blizzard: 13.499%
+  lapras_blizzard: 11.633%
+  haunter_hypnosis: 8.867%
+Strategy members / in-group members: 5/10
+Boosting against-strategy stats to 5...
+Collected statistics in 317.485 seconds
+Loaded results in 0.532 seconds
+Best against this strategy:
+  - 0.788852904666681: mewtwo_recover
+  - 0.7631067945834711: lapras_rest
+  - 0.7555117888645964: rhydon_rockslide
+  - 0.7541083266323467: cloyster_rest
+  - 0.7486784548767988: geodude_dig
+  - 0.7486784548767988: golem_dig
+  - 0.7486784548767988: golem_earthquake
+  - 0.7486784548767988: golem_rest
+  - 0.7486784548767988: golem_rockslide
+  - 0.7486784548767988: graveler_dig
+Collected statistics in 49.02 seconds
+Loaded results in 0.288 seconds
+Best against this strategy:
+  - 0.7906003807818465: mewtwo_recover
+  - 0.7557517954499611: rhydon_rockslide
+  - 0.7536649976373841: cloyster_rest
+  - 0.7486784548767988: geodude_dig
+  - 0.7486784548767988: golem_dig
+  - 0.7486784548767988: golem_earthquake
+  - 0.7486784548767988: golem_rest
+  - 0.7486784548767988: golem_rockslide
+  - 0.7486784548767988: graveler_earthquake
+  - 0.7486784548767988: graveler_rest
+Adding CombatantWithWinRate(combatant=mewtwo_recover, winRate=0.7906003807818465) to in-group
+Boosting among-in-group stats to 210...
+Collected statistics in 5.07 seconds
+Loaded results in 0.288 seconds
+Cur strategy:
+  lapras_blizzard: 36.717%
+  mewtwo_recover: 27.759%
+  mewtwo_bodyslam: 19.402%
+  chansey_seismictoss: 15.28%
+  mewtwo_psychic: 0.842%
+Strategy members / in-group members: 5/11
+Boosting against-strategy stats to 5...
+Collected statistics in 3.39 seconds
+Loaded results in 0.281 seconds
+Best against this strategy:
+  - 0.8245957091855032: kabutops_slash
+  - 0.6864256848025927: chansey_bide
+  - 0.6855066780676665: lapras_bide
+  - 0.6662797333621275: lapras_rest
+  - 0.6465456346404694: tauros_stomp
+  - 0.6447554467104418: cloyster_toxic
+  - 0.6447554467104418: dewgong_toxic
+  - 0.6447554467104418: lapras_solarbeam
+  - 0.6447554467104418: lapras_toxic
+  - 0.6447554467104418: vaporeon_toxic
+Collected statistics in 31.898 seconds
+Loaded results in 0.266 seconds
+Best against this strategy:
+  - 0.8368347146540969: kabutops_slash
+  - 0.6838772417342595: chansey_bide
+  - 0.6776387459807134: lapras_bide
+  - 0.6626444013887394: lapras_rest
+  - 0.6447554467104418: cloyster_toxic
+  - 0.6447554467104418: dewgong_toxic
+  - 0.6447554467104418: lapras_solarbeam
+  - 0.6447554467104418: lapras_toxic
+  - 0.6447554467104418: vaporeon_toxic
+  - 0.6348416866157051: lapras_rage
+Adding CombatantWithWinRate(combatant=kabutops_slash, winRate=0.8368347146540969) to in-group
+Boosting among-in-group stats to 220...
+Collected statistics in 6.413 seconds
+Loaded results in 0.692 seconds
+Cur strategy:
+  mewtwo_thunderbolt: 21.451%
+  mewtwo_recover: 21.201%
+  mewtwo_blizzard: 20.454%
+  kabutops_slash: 16.419%
+  lapras_blizzard: 13.254%
+  chansey_rest: 4.375%
+  chansey_seismictoss: 2.847%
+Strategy members / in-group members: 7/12
+Boosting against-strategy stats to 5...
+Collected statistics in 3.469 seconds
+Loaded results in 0.3 seconds
+Best against this strategy:
+  - 0.6629172529909575: rhydon_counter
+  - 0.6629172529909575: rhydon_dig
+  - 0.6597920410422845: golem_dig
+  - 0.6597920410422845: sandslash_dig
+  - 0.6516920658501707: lapras_bide
+  - 0.6397651921088717: chansey_bide
+  - 0.6394008773479886: graveler_dig
+  - 0.6347903454528999: rhyhorn_dig
+  - 0.6344504648123774: golem_counter
+  - 0.6314572576985493: lapras_solarbeam
+Collected statistics in 36.749 seconds
+Loaded results in 0.269 seconds
+Best against this strategy:
+  - 0.6672386915408367: rhydon_dig
+  - 0.6627281854701708: golem_dig
+  - 0.662529069515795: rhydon_counter
+  - 0.6512410684586938: lapras_bide
+  - 0.6440676460342971: sandslash_dig
+  - 0.6397651921088717: chansey_bide
+  - 0.6394008773479886: graveler_dig
+  - 0.6347903454528999: rhyhorn_dig
+  - 0.6344504648123774: golem_counter
+  - 0.6314572576985493: lapras_solarbeam
+Adding CombatantWithWinRate(combatant=rhydon_dig, winRate=0.6672386915408367) to in-group
+Boosting among-in-group stats to 230...
+Collected statistics in 6.504 seconds
+Loaded results in 0.59 seconds
+Cur strategy:
+  mewtwo_recover: 28.134%
+  lapras_blizzard: 22.805%
+  mewtwo_psychic: 13.825%
+  mewtwo_blizzard: 10.993%
+  kabutops_slash: 9.675%
+  mewtwo_thunderbolt: 8.897%
+  rhydon_dig: 5.671%
+Strategy members / in-group members: 7/13
+Boosting against-strategy stats to 5...
+Collected statistics in 73.89 seconds
+Loaded results in 0.312 seconds
+Best against this strategy:
+  - 0.7050733292303857: chansey_bide
+  - 0.6898257741909751: lapras_bide
+  - 0.6721041954244646: lapras_solarbeam
+  - 0.6646962711121667: cloyster_toxic
+  - 0.6551424367252687: lapras_bubblebeam
+  - 0.6415413749069866: victreebel_razorleaf
+  - 0.6309883729960734: mew_bide
+  - 0.628832034784109: venusaur_razorleaf
+  - 0.6193251180720134: dewgong_toxic
+  - 0.6193251180720134: lapras_toxic
+Collected statistics in 55.935 seconds
+Loaded results in 0.416 seconds
+Best against this strategy:
+  - 0.7009603966353333: chansey_bide
+  - 0.6906876895365424: lapras_bide
+  - 0.6688765037936155: lapras_solarbeam
+  - 0.6433910031505905: lapras_bubblebeam
+  - 0.6415413749069866: victreebel_razorleaf
+  - 0.6309883729960734: mew_bide
+  - 0.628832034784109: venusaur_razorleaf
+  - 0.6193251180720134: dewgong_toxic
+  - 0.6193251180720134: lapras_toxic
+  - 0.6064299461842507: cloyster_toxic
+Adding CombatantWithWinRate(combatant=chansey_bide, winRate=0.7009603966353333) to in-group
+Boosting among-in-group stats to 240...
+Collected statistics in 6.268 seconds
+Loaded results in 0.3 seconds
+Cur strategy:
+  mewtwo_blizzard: 19.076%
+  mewtwo_thunderbolt: 18.256%
+  chansey_bide: 16.66%
+  mewtwo_bodyslam: 14.6%
+  kabutops_slash: 12.773%
+  lapras_blizzard: 12.458%
+  rhydon_dig: 6.178%
+Strategy members / in-group members: 7/14
+Boosting against-strategy stats to 5...
+Collected statistics in 3.507 seconds
+Loaded results in 0.279 seconds
+Best against this strategy:
+  - 0.6523043462275785: rhydon_earthquake
+  - 0.6251670362126407: golem_earthquake
+  - 0.6220956832567759: sandslash_earthquake
+  - 0.5996442914154608: golem_toxic
+  - 0.5776646784279817: cloyster_clamp
+  - 0.5762303685758946: lapras_rest
+  - 0.575747648276157: cloyster_rest
+  - 0.5752832979300121: rhyhorn_earthquake
+  - 0.5746555296940988: rhydon_toxic
+  - 0.5641777632314706: lapras_hydropump
+Collected statistics in 27.208 seconds
+Loaded results in 0.355 seconds
+Best against this strategy:
+  - 0.6609840172406769: rhydon_earthquake
+  - 0.6294821596052007: golem_earthquake
+  - 0.6269789440958453: sandslash_earthquake
+  - 0.5996442914154608: golem_toxic
+  - 0.5953901848685578: cloyster_clamp
+  - 0.5762303685758946: lapras_rest
+  - 0.575747648276157: cloyster_rest
+  - 0.5752832979300121: rhyhorn_earthquake
+  - 0.5746555296940988: rhydon_toxic
+  - 0.5641777632314706: lapras_hydropump
+Adding CombatantWithWinRate(combatant=rhydon_earthquake, winRate=0.6609840172406769) to in-group
+Boosting among-in-group stats to 250...
+Collected statistics in 6.243 seconds
+Loaded results in 0.279 seconds
+Cur strategy:
+  mewtwo_blizzard: 16.49%
+  lapras_blizzard: 16.041%
+  chansey_bide: 15.059%
+  mewtwo_thunderbolt: 11.346%
+  kabutops_slash: 11.024%
+  mewtwo_bodyslam: 8.816%
+  mewtwo_psychic: 8.292%
+  mewtwo_recover: 6.631%
+  rhydon_earthquake: 6.302%
+Strategy members / in-group members: 9/15
+Boosting against-strategy stats to 5...
+Collected statistics in 3.455 seconds
+Loaded results in 0.289 seconds
+Best against this strategy:
+  - 0.5775973807297616: cloyster_clamp
+  - 0.546308624524635: lapras_hydropump
+  - 0.5422065136690792: dewgong_toxic
+  - 0.5422065136690792: lapras_toxic
+  - 0.5400117094190702: lapras_surf
+  - 0.5356825848336885: cloyster_rest
+  - 0.5335561348839755: lapras_bide
+  - 0.5185834523060834: lapras_bubblebeam
+  - 0.5104645879606914: lapras_solarbeam
+  - 0.5093602350343935: golem_toxic
+Collected statistics in 39.203 seconds
+Loaded results in 0.403 seconds
+Best against this strategy:
+  - 0.5780471083135457: cloyster_clamp
+  - 0.5483471058408306: lapras_surf
+  - 0.5422065136690792: lapras_toxic
+  - 0.5402277686839518: dewgong_toxic
+  - 0.5356825848336885: cloyster_rest
+  - 0.5335561348839755: lapras_bide
+  - 0.5185834523060834: lapras_bubblebeam
+  - 0.5142070835066871: lapras_hydropump
+  - 0.5104645879606914: lapras_solarbeam
+  - 0.5093602350343935: golem_toxic
+Adding CombatantWithWinRate(combatant=cloyster_clamp, winRate=0.5780471083135457) to in-group
+Boosting among-in-group stats to 260...
+Collected statistics in 7.272 seconds
+Loaded results in 0.336 seconds
+Cur strategy:
+  mewtwo_blizzard: 28.72%
+  mewtwo_thunderbolt: 14.447%
+  mewtwo_recover: 13.619%
+  chansey_bide: 12.082%
+  cloyster_clamp: 11.085%
+  kabutops_slash: 10.963%
+  mewtwo_bodyslam: 6.252%
+  lapras_blizzard: 2.602%
+  dewgong_icebeam: 0.23%
+Strategy members / in-group members: 9/16
+Boosting against-strategy stats to 5...
+Collected statistics in 3.526 seconds
+Loaded results in 0.299 seconds
+Best against this strategy:
+  - 0.6760244463177257: dewgong_toxic
+  - 0.6567799052922468: lapras_toxic
+  - 0.62548254291365: vaporeon_toxic
+  - 0.5667345923804958: cloyster_rest
+  - 0.5666400246312967: cloyster_toxic
+  - 0.5547935610502013: golem_toxic
+  - 0.545523794771998: lapras_bide
+  - 0.5412078127996398: rhydon_toxic
+  - 0.5341393067234114: gengar_toxic
+  - 0.5311363562881295: cloyster_icebeam
+Collected statistics in 61.614 seconds
+Loaded results in 0.264 seconds
+Best against this strategy:
+  - 0.6761569994755822: dewgong_toxic
+  - 0.6569504383131158: lapras_toxic
+  - 0.5688482602559785: cloyster_toxic
+  - 0.5667345923804958: cloyster_rest
+  - 0.5547935610502013: golem_toxic
+  - 0.545523794771998: lapras_bide
+  - 0.5412078127996398: rhydon_toxic
+  - 0.5341393067234114: gengar_toxic
+  - 0.5311363562881295: cloyster_icebeam
+  - 0.5241724398314453: gastly_toxic
+Adding CombatantWithWinRate(combatant=dewgong_toxic, winRate=0.6761569994755822) to in-group
+Boosting among-in-group stats to 270...
+Collected statistics in 6.641 seconds
+Loaded results in 0.324 seconds
+Cur strategy:
+  mewtwo_blizzard: 17.814%
+  lapras_blizzard: 12.645%
+  mewtwo_thunderbolt: 11.234%
+  mewtwo_bodyslam: 11.187%
+  kabutops_slash: 8.88%
+  mewtwo_recover: 8.489%
+  chansey_bide: 8.443%
+  mewtwo_psychic: 8.118%
+  dewgong_toxic: 5.576%
+  rhydon_earthquake: 4.899%
+  rhydon_dig: 2.717%
+Strategy members / in-group members: 11/17
+Boosting against-strategy stats to 5...
+Collected statistics in 3.443 seconds
+Loaded results in 0.298 seconds
+Best against this strategy:
+  - 0.5667867811950937: cloyster_rest
+  - 0.5431060919987222: lapras_rest
+  - 0.527040213813146: lapras_surf
+  - 0.5237646620039856: lapras_solarbeam
+  - 0.5229621037274504: lapras_bide
+  - 0.5127105710723805: lapras_hydropump
+  - 0.5046535307924747: lapras_bubblebeam
+  - 0.5008599107122412: mewtwo_icebeam
+  - 0.5002773876503528: golem_earthquake
+  - 0.49490322438170525: golem_dig
+Collected statistics in 35.276 seconds
+Loaded results in 0.272 seconds
+Best against this strategy:
+  - 0.5668719156481445: cloyster_rest
+  - 0.5445797566897314: lapras_rest
+  - 0.5275563987882096: lapras_surf
+  - 0.5224448280114464: lapras_bide
+  - 0.5202925350195485: lapras_solarbeam
+  - 0.5127105710723805: lapras_hydropump
+  - 0.5046535307924747: lapras_bubblebeam
+  - 0.5008599107122412: mewtwo_icebeam
+  - 0.5002773876503528: golem_earthquake
+  - 0.49490322438170525: golem_dig
+Adding CombatantWithWinRate(combatant=cloyster_rest, winRate=0.5668719156481445) to in-group
+Boosting among-in-group stats to 280...
+Collected statistics in 6.786 seconds
+Loaded results in 0.336 seconds
+Cur strategy:
+  mewtwo_blizzard: 21.016%
+  chansey_bide: 16.561%
+  mewtwo_psychic: 14.3%
+  cloyster_rest: 9.247%
+  mewtwo_recover: 9.224%
+  mewtwo_bodyslam: 9.068%
+  kabutops_slash: 7.192%
+  dewgong_toxic: 6.849%
+  rhydon_earthquake: 6.544%
+Strategy members / in-group members: 9/18
+Boosting against-strategy stats to 5...
+Collected statistics in 3.181 seconds
+Loaded results in 0.281 seconds
+Best against this strategy:
+  - 0.540247347681649: lapras_bide
+  - 0.5273237792239874: lapras_solarbeam
+  - 0.5090096492385447: lapras_rest
+  - 0.5062924613763623: mewtwo_icebeam
+  - 0.5061189446448038: dewgong_blizzard
+  - 0.5009282256381574: articuno_blizzard
+  - 0.49568034351586654: gengar_megadrain
+  - 0.4932659122087671: tauros_bodyslam
+  - 0.4919447862879964: mewtwo_thunderbolt
+  - 0.4898861137912692: gengar_toxic
+Collected statistics in 64.185 seconds
+Loaded results in 0.266 seconds
+Best against this strategy:
+  - 0.5408172260619766: lapras_bide
+  - 0.5273638563365812: lapras_solarbeam
+  - 0.5097269484323881: lapras_rest
+  - 0.5009282256381574: articuno_blizzard
+  - 0.49568034351586654: gengar_megadrain
+  - 0.49353274544609976: mewtwo_icebeam
+  - 0.4932659122087671: tauros_bodyslam
+  - 0.4919447862879964: mewtwo_thunderbolt
+  - 0.4898861137912692: gengar_toxic
+  - 0.48944983915404866: sandslash_earthquake
+Adding CombatantWithWinRate(combatant=lapras_bide, winRate=0.5408172260619766) to in-group
+Boosting among-in-group stats to 290...
+Collected statistics in 7.101 seconds
+Loaded results in 0.328 seconds
+Cur strategy:
+  mewtwo_bodyslam: 22.742%
+  mewtwo_blizzard: 17.479%
+  lapras_bide: 14.458%
+  rhydon_dig: 8.167%
+  mewtwo_psychic: 7.755%
+  mewtwo_recover: 7.669%
+  cloyster_clamp: 6.244%
+  kabutops_slash: 3.855%
+  chansey_bide: 3.507%
+  mewtwo_thunderbolt: 3.211%
+  rhydon_earthquake: 2.32%
+  dewgong_toxic: 2.096%
+  cloyster_rest: 0.496%
+Strategy members / in-group members: 13/19
+Boosting against-strategy stats to 5...
+Collected statistics in 3.293 seconds
+Loaded results in 0.331 seconds
+Best against this strategy:
+  - 0.6024650479725054: gengar_toxic
+  - 0.5967999762951309: gastly_toxic
+  - 0.5878805035824712: haunter_toxic
+  - 0.5660814174200027: gengar_mimic
+  - 0.5469601151864274: golem_toxic
+  - 0.5350391504292582: gengar_megadrain
+  - 0.5269568741462891: mewtwo_fireblast
+  - 0.5262422482260003: omastar_toxic
+  - 0.5250414254844156: dodrio_bodyslam
+  - 0.5181698620815974: rhydon_toxic
+Collected statistics in 85.031 seconds
+Loaded results in 0.283 seconds
+Best against this strategy:
+  - 0.6024650479725054: gengar_toxic
+  - 0.5932492879093755: haunter_toxic
+  - 0.5867818090436573: gastly_toxic
+  - 0.5469601151864274: golem_toxic
+  - 0.5350391504292582: gengar_megadrain
+  - 0.5269568741462891: mewtwo_fireblast
+  - 0.5262422482260003: omastar_toxic
+  - 0.5250414254844156: dodrio_bodyslam
+  - 0.5181698620815974: rhydon_toxic
+  - 0.5101341533002701: snorlax_bodyslam
+Adding CombatantWithWinRate(combatant=gengar_toxic, winRate=0.6024650479725054) to in-group
+Boosting among-in-group stats to 300...
+Collected statistics in 8.568 seconds
+Loaded results in 0.387 seconds
+Cur strategy:
+  mewtwo_blizzard: 19.958%
+  mewtwo_bodyslam: 13.474%
+  mewtwo_psychic: 12.091%
+  mewtwo_recover: 9.893%
+  chansey_bide: 9.751%
+  dewgong_toxic: 7.542%
+  lapras_bide: 6.701%
+  rhydon_earthquake: 6.495%
+  cloyster_rest: 5.761%
+  gengar_toxic: 5.16%
+  mewtwo_thunderbolt: 1.764%
+  rhydon_dig: 1.227%
+  lapras_blizzard: 0.184%
+Strategy members / in-group members: 13/20
+Boosting against-strategy stats to 5...
+Collected statistics in 3.907 seconds
+Loaded results in 0.297 seconds
+Best against this strategy:
+  - 0.5548372779912513: aerodactyl_fly
+  - 0.5447284947684181: mewtwo_fireblast
+  - 0.5177069152180163: lapras_icebeam
+  - 0.5062559593158393: lapras_psychic
+  - 0.5059653014943566: golduck_icebeam
+  - 0.5038858188332928: mewtwo_icebeam
+  - 0.4996119539399321: haunter_toxic
+  - 0.49950626831634215: gastly_toxic
+  - 0.49366856059571534: cloyster_blizzard
+  - 0.49220321613591467: dewgong_icebeam
+Collected statistics in 104.143 seconds
+Loaded results in 0.33 seconds
+Best against this strategy:
+  - 0.541228033436485: lapras_icebeam
+  - 0.5372617431212481: mewtwo_fireblast
+  - 0.5038858188332928: mewtwo_icebeam
+  - 0.4996119539399321: haunter_toxic
+  - 0.49950626831634215: gastly_toxic
+  - 0.49366856059571534: cloyster_blizzard
+  - 0.49220321613591467: dewgong_icebeam
+  - 0.4920531877427754: lapras_rest
+  - 0.4919424752929572: jynx_icebeam
+  - 0.4906485137508665: aerodactyl_fly
+Adding CombatantWithWinRate(combatant=lapras_icebeam, winRate=0.541228033436485) to in-group
+Boosting among-in-group stats to 310...
+Collected statistics in 8.458 seconds
+Loaded results in 0.292 seconds
+Cur strategy:
+  mewtwo_bodyslam: 16.587%
+  mewtwo_blizzard: 14.28%
+  mewtwo_thunderbolt: 10.219%
+  lapras_icebeam: 9.174%
+  mewtwo_recover: 8.874%
+  mewtwo_psychic: 7.307%
+  lapras_bide: 7.051%
+  chansey_bide: 6.885%
+  kabutops_slash: 6.194%
+  rhydon_dig: 4.782%
+  rhydon_earthquake: 3.754%
+  cloyster_clamp: 3.71%
+  dewgong_toxic: 0.62%
+  gengar_toxic: 0.549%
+  cloyster_rest: 0.012%
+Strategy members / in-group members: 15/21
+Boosting against-strategy stats to 5...
+Collected statistics in 3.421 seconds
+Loaded results in 0.292 seconds
+Best against this strategy:
+  - 0.5459756502397914: golem_toxic
+  - 0.5224621423792909: rhydon_toxic
+  - 0.5163144515203238: victreebel_razorleaf
+  - 0.5129083053735383: venusaur_razorleaf
+  - 0.4945427022874315: haunter_toxic
+  - 0.49230528512682387: lapras_toxic
+  - 0.49070414837177495: gastly_toxic
+  - 0.48963515468205704: mewtwo_icebeam
+  - 0.4852723823117899: mewtwo_fireblast
+  - 0.4847557620626819: rhyhorn_toxic
+Collected statistics in 83.168 seconds
+Loaded results in 0.281 seconds
+Best against this strategy:
+  - 0.5490592182883942: rhydon_toxic
+  - 0.5459756502397914: golem_toxic
+  - 0.4979160805590071: venusaur_razorleaf
+  - 0.494422985103912: haunter_toxic
+  - 0.49230528512682387: lapras_toxic
+  - 0.49070414837177495: gastly_toxic
+  - 0.48963515468205704: mewtwo_icebeam
+  - 0.4864189136666612: victreebel_razorleaf
+  - 0.4852723823117899: mewtwo_fireblast
+  - 0.4847557620626819: rhyhorn_toxic
+Adding CombatantWithWinRate(combatant=rhydon_toxic, winRate=0.5490592182883942) to in-group
+Boosting among-in-group stats to 320...
+Collected statistics in 9.732 seconds
+Loaded results in 0.353 seconds
+Cur strategy:
+  mewtwo_blizzard: 14.716%
+  mewtwo_bodyslam: 13.829%
+  mewtwo_psychic: 13.174%
+  chansey_bide: 10.269%
+  mewtwo_recover: 9.936%
+  lapras_icebeam: 7.049%
+  mewtwo_thunderbolt: 5.296%
+  kabutops_slash: 5.136%
+  lapras_bide: 4.607%
+  cloyster_rest: 4.573%
+  rhydon_earthquake: 4.293%
+  dewgong_toxic: 2.873%
+  rhydon_toxic: 2.561%
+  gengar_toxic: 1.483%
+  rhydon_dig: 0.205%
+Strategy members / in-group members: 15/22
+Boosting against-strategy stats to 5...
+Collected statistics in 83.828 seconds
+Loaded results in 0.299 seconds
+Best against this strategy:
+  - 0.5050905210465174: golem_toxic
+  - 0.49967678000857313: haunter_toxic
+  - 0.4996081116558469: gastly_toxic
+  - 0.49951040822321224: mewtwo_icebeam
+  - 0.4984367847652382: mewtwo_fireblast
+  - 0.4965125182352407: gengar_megadrain
+  - 0.4906139609745839: lapras_toxic
+  - 0.4880004837254228: lapras_rest
+  - 0.47160691928204324: mewtwo_seismictoss
+  - 0.470920575249386: golem_dig
+Collected statistics in 15.699 seconds
+Loaded results in 0.342 seconds
+Best against this strategy:
+  - 0.5051473185330474: golem_toxic
+  - 0.5004071657427772: mewtwo_fireblast
+  - 0.49967217032748734: haunter_toxic
+  - 0.4996007202706576: gastly_toxic
+  - 0.4987877400399443: mewtwo_icebeam
+  - 0.4965125182352407: gengar_megadrain
+  - 0.4906139609745839: lapras_toxic
+  - 0.4880004837254228: lapras_rest
+  - 0.47160691928204324: mewtwo_seismictoss
+  - 0.470920575249386: golem_dig
+Adding CombatantWithWinRate(combatant=golem_toxic, winRate=0.5051473185330474) to in-group
+Boosting among-in-group stats to 330...
+Collected statistics in 10.803 seconds
+Loaded results in 0.279 seconds
+Cur strategy:
+  mewtwo_blizzard: 14.915%
+  mewtwo_bodyslam: 13.829%
+  mewtwo_psychic: 12.969%
+  chansey_bide: 9.937%
+  mewtwo_recover: 9.863%
+  lapras_icebeam: 6.949%
+  mewtwo_thunderbolt: 5.539%
+  kabutops_slash: 5.332%
+  lapras_bide: 5.033%
+  rhydon_earthquake: 4.449%
+  cloyster_rest: 4.245%
+  dewgong_toxic: 2.822%
+  golem_toxic: 2.387%
+  gengar_toxic: 1.506%
+  rhydon_dig: 0.224%
+Strategy members / in-group members: 15/23
+Boosting against-strategy stats to 5...
+Collected statistics in 4.138 seconds
+Loaded results in 0.433 seconds
+Best against this strategy:
+  - 0.49969568075028215: haunter_toxic
+  - 0.49962935475995895: gastly_toxic
+  - 0.4989419655710456: mewtwo_icebeam
+  - 0.4983934779828153: mewtwo_fireblast
+  - 0.4955705287345228: rhydon_toxic
+  - 0.4936000063853583: gengar_megadrain
+  - 0.4914297403161554: lapras_toxic
+  - 0.4857976729659891: lapras_rest
+  - 0.472575262513437: golem_dig
+  - 0.47244734641664454: mewtwo_seismictoss
+Collected statistics in 5.939 seconds
+Loaded results in 0.334 seconds
+Best against this strategy:
+  - 0.4996916609932929: haunter_toxic
+  - 0.4996905590433071: mewtwo_icebeam
+  - 0.4996273448814643: gastly_toxic
+  - 0.4983138272528619: mewtwo_fireblast
+  - 0.4955705287345228: rhydon_toxic
+  - 0.4936000063853583: gengar_megadrain
+  - 0.4914297403161554: lapras_toxic
+  - 0.4857976729659891: lapras_rest
+  - 0.472575262513437: golem_dig
+  - 0.47244734641664454: mewtwo_seismictoss
+Maybe ran out of new entries? Ending for now
+Final version of in-group:
+  - chansey_bide
+  - chansey_rest
+  - chansey_seismictoss
+  - cloyster_clamp
+  - cloyster_rest
+  - dewgong_icebeam
+  - dewgong_toxic
+  - gengar_toxic
+  - golem_toxic
+  - haunter_hypnosis
+  - jynx_psychic
+  - kabutops_slash
+  - lapras_bide
+  - lapras_blizzard
+  - lapras_icebeam
+  - mewtwo_blizzard
+  - mewtwo_bodyslam
+  - mewtwo_psychic
+  - mewtwo_recover
+  - mewtwo_thunderbolt
+  - rhydon_dig
+  - rhydon_earthquake
+  - rhydon_toxic
+
+Process finished with exit code 0
