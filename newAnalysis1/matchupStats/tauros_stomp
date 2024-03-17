@@ -8,10 +8,10 @@ snorlax_bodyslam 8 3 0
 mewtwo_icebeam 0 14 0
 omastar_rest 0 5 0
 lapras_bide 128 82 0
-lapras_icebeam 1 4 0
+lapras_icebeam 6 14 0
 mewtwo_bodyslam 38 172 0
 omastar_toxic 1 4 0
-mewtwo_fireblast 0 14 0
+mewtwo_fireblast 0 20 0
 kabutops_slash 15 195 0
 mewtwo_thunder 2 3 0
 porygon_toxic 3 0 0
@@ -24,3 +24,6 @@ lapras_rage 5 0 0
 lapras_blizzard 72 138 0
 mewtwo_blizzard 4 206 0
 lapras_rest 152 58 0
+lapras_toxic 5 0 0
+mewtwo_bide 3 2 0
+articuno_blizzard 1 4 0

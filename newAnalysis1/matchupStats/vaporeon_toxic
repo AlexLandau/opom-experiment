@@ -9,7 +9,7 @@ mewtwo_icebeam 9 5 0
 omastar_rest 0 5 0
 mewtwo_bodyslam 0 260 0
 omastar_toxic 5 0 0
-mewtwo_fireblast 1 13 0
+mewtwo_fireblast 5 15 0
 kabutops_slash 0 260 0
 mewtwo_thunder 0 5 0
 porygon_toxic 3 0 0
@@ -17,3 +17,5 @@ jolteon_thunderbolt 0 13 0
 mew_rockslide 0 4 0
 mewtwo_thunderbolt 0 260 0
 mewtwo_blizzard 103 157 0
+mewtwo_bide 5 0 0
+articuno_blizzard 2 3 0

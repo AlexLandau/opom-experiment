@@ -9,8 +9,8 @@ mewtwo_icebeam 0 13 0
 omastar_rest 0 5 0
 mewtwo_bodyslam 0 200 0
 omastar_toxic 0 5 0
-mewtwo_fireblast 0 13 0
-kabutops_slash 0 13 0
+mewtwo_fireblast 0 20 0
+kabutops_slash 0 20 0
 mewtwo_thunder 1 4 0
 porygon_triattack 0 3 0
 omanyte_bide 3 0 0
@@ -170,7 +170,7 @@ snorlax_toxic 2 1 0
 snorlax_watergun 3 0 0
 articuno_agility 3 0 0
 articuno_bide 3 0 0
-articuno_blizzard 0 3 0
+articuno_blizzard 0 5 0
 articuno_bubblebeam 0 3 0
 articuno_doubleedge 0 3 0
 articuno_doubleteam 3 0 0
@@ -326,8 +326,8 @@ dragonite_watergun 1 2 0
 dragonite_wrap 1 2 0
 mewtwo_amnesia 3 0 0
 mewtwo_barrier 3 0 0
-mewtwo_bide 3 0 0
-mewtwo_blizzard 0 5 0
+mewtwo_bide 5 0 0
+mewtwo_blizzard 0 20 0
 mewtwo_bubblebeam 0 3 0
 mewtwo_counter 3 0 0
 mewtwo_doubleedge 0 3 0
@@ -352,7 +352,7 @@ mewtwo_substitute 0 3 0
 mewtwo_swift 0 3 0
 mewtwo_takedown 0 3 0
 mewtwo_teleport 3 0 0
-mewtwo_thunderbolt 0 13 0
+mewtwo_thunderbolt 0 20 0
 mewtwo_thunderwave 3 0 0
 mewtwo_toxic 1 2 0
 mewtwo_triattack 0 3 0

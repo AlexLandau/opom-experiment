@@ -11,10 +11,10 @@ snorlax_bodyslam 8 3 0
 mewtwo_icebeam 0 14 0
 omastar_rest 5 0 0
 lapras_bide 0 220 0
-lapras_icebeam 0 5 0
+lapras_icebeam 0 20 0
 mewtwo_bodyslam 216 4 0
 omastar_toxic 0 5 0
-mewtwo_fireblast 0 14 0
+mewtwo_fireblast 0 20 0
 kabutops_slash 220 0 0
 mewtwo_thunder 5 0 0
 chansey_rest 220 0 0
@@ -23,9 +23,9 @@ jolteon_thunderbolt 13 0 0
 mew_rockslide 0 4 0
 vaporeon_blizzard 0 6 0
 vaporeon_hydropump 0 8 0
-chansey_bide 0 14 0
+chansey_bide 0 20 0
 mewtwo_thunderbolt 220 0 0
-rhydon_earthquake 0 14 0
+rhydon_earthquake 0 20 0
 lapras_rage 5 0 0
 jynx_seismictoss 5 0 0
 lapras_blizzard 0 220 0
@@ -33,3 +33,8 @@ mewtwo_blizzard 0 220 0
 rhydon_dig 0 220 0
 jynx_psychic 0 220 0
 rhydon_toxic 0 5 0
+lapras_toxic 0 5 0
+lapras_rest 5 0 0
+mewtwo_bide 0 5 0
+rhydon_seismictoss 5 0 0
+articuno_blizzard 0 5 0

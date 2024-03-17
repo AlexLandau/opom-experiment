@@ -14,11 +14,11 @@ snorlax_bodyslam 6 5 0
 mewtwo_icebeam 280 0 0
 omastar_rest 0 5 0
 lapras_bide 0 280 0
-lapras_icebeam 1 4 0
+lapras_icebeam 1 19 0
 mewtwo_bodyslam 71 209 0
 omastar_toxic 5 0 0
 gengar_thunderbolt 0 5 0
-mewtwo_fireblast 2 12 0
+mewtwo_fireblast 5 15 0
 kabutops_slash 46 234 0
 mewtwo_thunder 2 3 0
 chansey_rest 71 209 0
@@ -49,3 +49,9 @@ jynx_psychic 2 278 0
 lapras_rest 0 280 0
 lapras_solarbeam 0 280 0
 rhydon_toxic 5 0 0
+lapras_toxic 0 5 0
+haunter_thunderbolt 2 3 0
+mewtwo_bide 0 5 0
+rhydon_seismictoss 5 0 0
+articuno_blizzard 5 0 0
+gastly_toxic 5 0 0

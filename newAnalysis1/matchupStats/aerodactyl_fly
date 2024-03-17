@@ -1,7 +1,7 @@
 mewtwo_psychic 16 284 0
-mewtwo_megakick 89 11 0
+mewtwo_megakick 240 30 0
 mewtwo_recover 300 0 0
-mewtwo_seismictoss 42 58 0
+mewtwo_seismictoss 115 155 0
 mew_bide 1 99 0
 aerodactyl_hyperbeam 2 3 0
 aerodactyl_mimic 5 0 0
@@ -14,7 +14,7 @@ aerodactyl_substitute 5 0 0
 aerodactyl_supersonic 5 0 0
 aerodactyl_swift 0 5 0
 aerodactyl_takedown 5 0 0
-aerodactyl_toxic 0 5 0
+aerodactyl_toxic 22 248 0
 aerodactyl_whirlwind 5 0 0
 aerodactyl_wingattack 5 0 0
 snorlax_amnesia 5 0 0
@@ -58,7 +58,7 @@ snorlax_toxic 2 3 0
 snorlax_watergun 5 0 0
 articuno_agility 5 0 0
 articuno_bide 0 5 0
-articuno_blizzard 0 5 0
+articuno_blizzard 1 269 0
 articuno_bubblebeam 0 5 0
 articuno_doubleedge 5 0 0
 articuno_doubleteam 5 0 0
@@ -214,7 +214,7 @@ dragonite_watergun 3 2 0
 dragonite_wrap 5 0 0
 mewtwo_amnesia 5 0 0
 mewtwo_barrier 5 0 0
-mewtwo_bide 0 5 0
+mewtwo_bide 19 251 0
 mewtwo_blizzard 15 285 0
 mewtwo_bodyslam 249 51 0
 mewtwo_bubblebeam 0 5 0

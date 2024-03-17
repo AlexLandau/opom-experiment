@@ -1,7 +1,7 @@
 mewtwo_psychic 14 316 0
-mewtwo_megakick 8 172 0
+mewtwo_megakick 11 239 0
 mewtwo_recover 302 0 28
-mewtwo_seismictoss 100 0 0
+mewtwo_seismictoss 250 0 0
 mew_bide 100 0 0
 chansey_sing 5 0 0
 chansey_skullbash 5 0 0
@@ -346,7 +346,7 @@ electabuzz_swift 5 0 0
 electabuzz_takedown 5 0 0
 electabuzz_teleport 5 0 0
 electabuzz_thunder 4 1 0
-electabuzz_thunderbolt 5 0 0
+electabuzz_thunderbolt 241 9 0
 electabuzz_thunderpunch 5 0 0
 electabuzz_thundershock 5 0 0
 electabuzz_thunderwave 5 0 0
@@ -487,7 +487,7 @@ lapras_substitute 5 0 0
 lapras_surf 242 28 0
 lapras_takedown 2 1 2
 lapras_thunder 5 0 0
-lapras_thunderbolt 5 0 0
+lapras_thunderbolt 244 6 0
 lapras_toxic 260 0 0
 lapras_watergun 5 0 0
 ditto_transform 5 0 0
@@ -535,7 +535,7 @@ vaporeon_rest 0 5 0
 vaporeon_sandattack 5 0 0
 vaporeon_skullbash 5 0 0
 vaporeon_substitute 5 0 0
-vaporeon_surf 4 1 0
+vaporeon_surf 218 32 0
 vaporeon_swift 5 0 0
 vaporeon_tackle 5 0 0
 vaporeon_tailwhip 5 0 0
@@ -789,7 +789,7 @@ snorlax_toxic 5 0 0
 snorlax_watergun 5 0 0
 articuno_agility 5 0 0
 articuno_bide 5 0 0
-articuno_blizzard 2 3 0
+articuno_blizzard 112 138 0
 articuno_bubblebeam 5 0 0
 articuno_doubleedge 3 2 0
 articuno_doubleteam 5 0 0
@@ -945,7 +945,7 @@ dragonite_watergun 5 0 0
 dragonite_wrap 0 5 0
 mewtwo_amnesia 5 0 0
 mewtwo_barrier 5 0 0
-mewtwo_bide 5 0 0
+mewtwo_bide 250 0 0
 mewtwo_blizzard 113 217 0
 mewtwo_bodyslam 0 330 0
 mewtwo_bubblebeam 5 0 0

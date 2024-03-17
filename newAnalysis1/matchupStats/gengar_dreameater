@@ -12,12 +12,12 @@ snorlax_bodyslam 11 0 0
 mewtwo_icebeam 0 14 0
 omastar_rest 9 0 0
 lapras_bide 0 200 0
-lapras_icebeam 0 9 0
+lapras_icebeam 0 20 0
 mewtwo_bodyslam 200 0 0
 omastar_toxic 9 0 0
 gengar_thunderbolt 0 9 0
-mewtwo_fireblast 0 14 0
-kabutops_slash 14 0 0
+mewtwo_fireblast 0 20 0
+kabutops_slash 20 0 0
 mewtwo_thunder 0 9 0
 chansey_rest 0 8 6
 porygon_toxic 200 0 0
@@ -496,10 +496,10 @@ rhydon_blizzard 0 9 0
 rhydon_bodyslam 9 0 0
 rhydon_bubblebeam 0 9 0
 rhydon_counter 0 9 0
-rhydon_dig 0 9 0
+rhydon_dig 0 20 0
 rhydon_doubleedge 9 0 0
 rhydon_doubleteam 9 0 0
-rhydon_earthquake 0 14 0
+rhydon_earthquake 0 20 0
 rhydon_fireblast 0 9 0
 rhydon_fissure 9 0 0
 rhydon_furyattack 9 0 0
@@ -526,7 +526,7 @@ rhydon_thunder 0 9 0
 rhydon_thunderbolt 0 9 0
 rhydon_toxic 9 0 0
 rhydon_watergun 0 9 0
-chansey_bide 0 14 0
+chansey_bide 0 20 0
 chansey_blizzard 0 9 0
 chansey_bodyslam 0 5 4
 chansey_bubblebeam 0 9 0
@@ -1486,7 +1486,7 @@ dragonite_wrap 9 0 0
 mewtwo_amnesia 9 0 0
 mewtwo_barrier 9 0 0
 mewtwo_bide 0 9 0
-mewtwo_blizzard 0 9 0
+mewtwo_blizzard 0 20 0
 mewtwo_bubblebeam 0 9 0
 mewtwo_counter 0 9 0
 mewtwo_doubleedge 9 0 0
@@ -1511,7 +1511,7 @@ mewtwo_substitute 9 0 0
 mewtwo_swift 9 0 0
 mewtwo_takedown 9 0 0
 mewtwo_teleport 9 0 0
-mewtwo_thunderbolt 0 14 0
+mewtwo_thunderbolt 0 20 0
 mewtwo_thunderwave 9 0 0
 mewtwo_toxic 9 0 0
 mewtwo_triattack 9 0 0

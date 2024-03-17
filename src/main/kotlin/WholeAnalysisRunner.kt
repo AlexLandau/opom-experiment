@@ -28,17 +28,23 @@ fun main() {
 class AnalysisState(val analysisRoot: File, val gen: Int) {
     val combatantsOfInterest = TreeSet<String>()
     val statisticsDir = File(analysisRoot, "matchupStats")
+    val savedIngroupFile = File(analysisRoot, "ingroup")
 
     fun run() {
         if (!analysisRoot.exists()) {
             analysisRoot.mkdir()
         }
 
-        for (i in 1..10) {
-            println("Running single-elimination tournament...")
-            val winner = runSingleElimTournamentGetWinner(gen)
-            println("Found winner $winner")
-            combatantsOfInterest.add(winner)
+        if (!savedIngroupFile.exists() || loadInGroup().isEmpty()) {
+            for (i in 1..10) {
+                println("Running single-elimination tournament...")
+                val winner = runSingleElimTournamentGetWinner(gen)
+                println("Found winner $winner")
+                combatantsOfInterest.add(winner)
+            }
+            saveInGroup()
+        } else {
+            combatantsOfInterest.addAll(loadInGroup())
         }
 
 //        combatantsOfInterest.add("kabutops_slash")
@@ -50,41 +56,71 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
         // TODO: Collect a set of info among these, then compute an equilibrium
         // Then collect stats for combatants relative to the ones actually in the equilibrium, then continue...
 
-        while (true) {
-            val inGroupBoostTarget = 100 + (10 * combatantsOfInterest.size)
-            println("Boosting among-in-group stats to $inGroupBoostTarget...")
-            boostInGroupStatsToN(inGroupBoostTarget)
+        for (passNumber in 1..2) {
+            println("Starting pass $passNumber")
+            while (true) {
+                val inGroupBoostTarget = when (passNumber) {
+                    1 -> 100 + (10 * combatantsOfInterest.size)
+                    2 -> maxOf(100 + (10 * combatantsOfInterest.size), 1000)
+                    else -> throw IllegalStateException()
+                }
+                println("Boosting among-in-group stats to $inGroupBoostTarget...")
+                boostInGroupStatsToN(inGroupBoostTarget)
 
-            val matchupResultStore = loadGen1Results(statisticsDir)
-            val strategy = solveForNashEquilibriumAmong(getCombatantsOfInterestIndices(matchupResultStore), matchupResultStore)
-            strategy.print()
-            println("Strategy members / in-group members: ${strategy.getNonDefaultIndices().size}/${combatantsOfInterest.size}")
+                val matchupResultStore = loadGen1Results(statisticsDir)
+                val strategy = solveForNashEquilibriumAmong(getCombatantsOfInterestIndices(matchupResultStore), matchupResultStore)
+                strategy.print()
+                println("Strategy members / in-group members: ${strategy.getNonDefaultIndices().size}/${combatantsOfInterest.size}")
 
 //            println("Boosting against-in-group stats to 1...")
 //            boostAgainstStrategyStatsToN(strategy, matchupResultStore, 1)
 //            findAndPrintBestAgainstStrategy(strategy, loadGen1Results(statisticsDir))
 
-            // val boostTarget = 2 + (combatantsOfInterest.size / 2)
-            val boostTarget = 5
-            println("Boosting against-strategy stats to $boostTarget...")
-            boostAgainstStrategyStatsToN(strategy, matchupResultStore, boostTarget)
-            // TODO: Take the ones that are close and boost their numbers as if they were in the group, and _then_
-            // pick the best one
-            val bestAgainstStratList = findAndPrintBestAgainstStrategy(strategy, loadGen1Results(statisticsDir))
-            boostInGroupStatsToN(inGroupBoostTarget, additional = bestAgainstStratList.map { it.combatant })
-            val bestAgainstStrat = findAndPrintBestAgainstStrategy(strategy, loadGen1Results(statisticsDir))[0]
-            if (bestAgainstStrat.winRate > 0.5) {
-                println("Adding ${bestAgainstStrat} to in-group")
-                combatantsOfInterest.add(bestAgainstStrat.combatant)
-            } else {
-                println("Maybe ran out of new entries? Ending for now")
-                println("Final version of in-group:")
-                for (combatant in combatantsOfInterest) {
-                    println("  - $combatant")
+                // val boostTarget = 2 + (combatantsOfInterest.size / 2)
+                val boostTarget = when (passNumber) {
+                    1 -> 5
+                    2 -> 20
+                    else -> throw IllegalStateException()
                 }
-                break
+                println("Boosting against-strategy stats to $boostTarget...")
+                boostAgainstStrategyStatsToN(strategy, matchupResultStore, boostTarget)
+                // Take the ones that are close and boost their numbers as if they were in the group, and _then_ pick the best one
+                val bestAgainstStratList = findAndPrintBestAgainstStrategy(strategy, loadGen1Results(statisticsDir))
+                boostInGroupStatsToN(inGroupBoostTarget, additional = bestAgainstStratList.map { it.combatant })
+                val bestAgainstStrat = findAndPrintBestAgainstStrategy(strategy, loadGen1Results(statisticsDir))[0]
+                if (bestAgainstStrat.winRate > 0.5) {
+                    println("Adding ${bestAgainstStrat} to in-group")
+                    combatantsOfInterest.add(bestAgainstStrat.combatant)
+                    saveInGroup()
+                } else {
+                    println("Maybe ran out of new entries? Ending for now")
+                    println("Final version of in-group:")
+                    for (combatant in combatantsOfInterest) {
+                        println("  - $combatant")
+                    }
+                    val toRemove = HashSet<String>()
+                    for (combatant in combatantsOfInterest) {
+                        val combatantIndex = matchupResultStore.getContestantIndex(combatant)
+                        val winRate = strategy.getWinRateAgainstThisStrategy(matchupResultStore, combatantIndex)
+                        if (winRate < 0.45) {
+                            println("Will remove $combatant from in-group, win rate is $winRate")
+                            toRemove.add(combatant)
+                        }
+                    }
+                    combatantsOfInterest.removeAll(toRemove)
+                    saveInGroup()
+                    break
+                }
             }
         }
+    }
+
+    private fun saveInGroup() {
+        savedIngroupFile.writeText(combatantsOfInterest.joinToString("\n"))
+    }
+
+    private fun loadInGroup(): List<String> {
+        return savedIngroupFile.readLines().filter { it.isNotBlank() }
     }
 
     data class CombatantWithWinRate(val combatant: String, val winRate: Double)

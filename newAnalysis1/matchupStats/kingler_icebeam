@@ -11,11 +11,11 @@ snorlax_bodyslam 2 9 0
 mewtwo_icebeam 5 9 0
 omastar_rest 3 2 0
 lapras_bide 0 200 0
-lapras_icebeam 0 5 0
+lapras_icebeam 0 20 0
 mewtwo_bodyslam 54 146 0
 omastar_toxic 1 4 0
-mewtwo_fireblast 4 10 0
-kabutops_slash 2 12 0
+mewtwo_fireblast 4 16 0
+kabutops_slash 2 18 0
 mewtwo_thunder 0 5 0
 chansey_rest 6 8 0
 porygon_toxic 200 0 0
@@ -344,10 +344,10 @@ rhydon_blizzard 3 0 0
 rhydon_bodyslam 3 0 0
 rhydon_bubblebeam 3 0 0
 rhydon_counter 3 0 0
-rhydon_dig 4 1 0
+rhydon_dig 19 1 0
 rhydon_doubleedge 3 0 0
 rhydon_doubleteam 3 0 0
-rhydon_earthquake 12 2 0
+rhydon_earthquake 17 3 0
 rhydon_fireblast 3 0 0
 rhydon_fissure 3 0 0
 rhydon_furyattack 3 0 0
@@ -362,7 +362,7 @@ rhydon_mimic 3 0 0
 rhydon_payday 3 0 0
 rhydon_rage 3 0 0
 rhydon_rest 3 0 0
-rhydon_seismictoss 3 0 0
+rhydon_seismictoss 5 0 0
 rhydon_skullbash 3 0 0
 rhydon_stomp 3 0 0
 rhydon_strength 3 0 0
@@ -374,7 +374,7 @@ rhydon_thunder 3 0 0
 rhydon_thunderbolt 1 2 0
 rhydon_toxic 5 0 0
 rhydon_watergun 3 0 0
-chansey_bide 9 5 0
+chansey_bide 12 8 0
 chansey_blizzard 1 2 0
 chansey_bodyslam 2 1 0
 chansey_bubblebeam 1 2 0
@@ -873,7 +873,7 @@ lapras_psychic 0 3 0
 lapras_psywave 0 3 0
 lapras_rage 0 5 0
 lapras_reflect 3 0 0
-lapras_rest 0 3 0
+lapras_rest 0 5 0
 lapras_sing 0 3 0
 lapras_skullbash 0 3 0
 lapras_solarbeam 0 3 0
@@ -883,7 +883,7 @@ lapras_surf 0 3 0
 lapras_takedown 0 3 0
 lapras_thunder 0 3 0
 lapras_thunderbolt 0 3 0
-lapras_toxic 0 3 0
+lapras_toxic 0 5 0
 lapras_watergun 0 3 0
 ditto_transform 2 1 0
 eevee_bide 2 1 0
@@ -1178,7 +1178,7 @@ snorlax_toxic 1 2 0
 snorlax_watergun 3 0 0
 articuno_agility 3 0 0
 articuno_bide 0 3 0
-articuno_blizzard 0 3 0
+articuno_blizzard 0 5 0
 articuno_bubblebeam 0 3 0
 articuno_doubleedge 0 3 0
 articuno_doubleteam 3 0 0
@@ -1334,8 +1334,8 @@ dragonite_watergun 3 0 0
 dragonite_wrap 1 2 0
 mewtwo_amnesia 3 0 0
 mewtwo_barrier 3 0 0
-mewtwo_bide 1 2 0
-mewtwo_blizzard 1 4 0
+mewtwo_bide 2 3 0
+mewtwo_blizzard 4 16 0
 mewtwo_bubblebeam 1 2 0
 mewtwo_counter 3 0 0
 mewtwo_doubleedge 1 2 0
@@ -1360,7 +1360,7 @@ mewtwo_substitute 3 0 0
 mewtwo_swift 0 3 0
 mewtwo_takedown 2 1 0
 mewtwo_teleport 3 0 0
-mewtwo_thunderbolt 2 12 0
+mewtwo_thunderbolt 2 18 0
 mewtwo_thunderwave 3 0 0
 mewtwo_toxic 0 3 0
 mewtwo_triattack 0 3 0

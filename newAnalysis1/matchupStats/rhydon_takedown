@@ -4,7 +4,7 @@ rhydon_thunder 5 0 0
 rhydon_thunderbolt 5 0 0
 rhydon_toxic 0 5 0
 rhydon_watergun 0 5 0
-chansey_bide 4 10 0
+chansey_bide 4 16 0
 chansey_blizzard 0 5 0
 chansey_bodyslam 5 0 0
 chansey_bubblebeam 0 5 0
@@ -975,7 +975,7 @@ dragonite_wrap 2 3 0
 mewtwo_amnesia 5 0 0
 mewtwo_barrier 5 0 0
 mewtwo_bide 1 4 0
-mewtwo_blizzard 0 5 0
+mewtwo_blizzard 0 20 0
 mewtwo_bodyslam 78 15 7
 mewtwo_bubblebeam 0 5 0
 mewtwo_counter 0 5 0
@@ -1006,7 +1006,7 @@ mewtwo_swift 5 0 0
 mewtwo_takedown 5 0 0
 mewtwo_teleport 5 0 0
 mewtwo_thunder 100 0 0
-mewtwo_thunderbolt 14 0 0
+mewtwo_thunderbolt 20 0 0
 mewtwo_thunderwave 5 0 0
 mewtwo_toxic 4 1 0
 mewtwo_triattack 5 0 0

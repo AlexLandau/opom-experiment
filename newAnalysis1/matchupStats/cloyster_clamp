@@ -1083,7 +1083,7 @@ lapras_blizzard 323 7 0
 lapras_bodyslam 11 3 0
 lapras_bubblebeam 10 4 0
 lapras_confuseray 13 1 0
-lapras_doubleedge 13 1 0
+lapras_doubleedge 196 13 1
 lapras_doubleteam 13 1 0
 lapras_dragonrage 13 1 0
 lapras_growl 14 0 0
@@ -1524,7 +1524,7 @@ dragonair_wrap 12 2 0
 dragonite_agility 14 0 0
 dragonite_bide 14 0 0
 dragonite_blizzard 14 0 0
-dragonite_bodyslam 1 13 0
+dragonite_bodyslam 2 208 0
 dragonite_bubblebeam 11 3 0
 dragonite_doubleedge 0 14 0
 dragonite_doubleteam 10 3 1

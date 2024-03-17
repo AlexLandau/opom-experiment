@@ -18,7 +18,7 @@ lapras_icebeam 220 90 0
 mewtwo_bodyslam 1 309 0
 omastar_toxic 5 0 0
 gengar_thunderbolt 4 1 0
-mewtwo_fireblast 0 14 0
+mewtwo_fireblast 0 20 0
 kabutops_slash 310 0 0
 mewtwo_thunder 2 3 0
 chansey_rest 0 310 0
@@ -49,3 +49,12 @@ rhydon_dig 310 0 0
 haunter_toxic 310 0 0
 rhydon_toxic 310 0 0
 jynx_psychic 0 310 0
+lapras_toxic 5 0 0
+lapras_rest 5 0 0
+magneton_thunderbolt 4 1 0
+haunter_thunderbolt 5 0 0
+mewtwo_bide 0 5 0
+rhydon_seismictoss 5 0 0
+articuno_blizzard 0 5 0
+dodrio_bodyslam 0 5 0
+gastly_toxic 5 0 0

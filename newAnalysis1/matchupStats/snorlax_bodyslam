@@ -166,7 +166,7 @@ dragonair_wrap 7 4 0
 dragonite_agility 11 0 0
 dragonite_bide 7 4 0
 dragonite_blizzard 10 1 0
-dragonite_bodyslam 10 1 0
+dragonite_bodyslam 307 33 0
 dragonite_bubblebeam 11 0 0
 dragonite_doubleedge 11 0 0
 dragonite_doubleteam 11 0 0
@@ -197,7 +197,7 @@ dragonite_wrap 3 8 0
 mewtwo_amnesia 11 0 0
 mewtwo_barrier 11 0 0
 mewtwo_bide 9 2 0
-mewtwo_blizzard 4 7 0
+mewtwo_blizzard 151 189 0
 mewtwo_bodyslam 312 28 0
 mewtwo_bubblebeam 9 2 0
 mewtwo_counter 0 11 0
