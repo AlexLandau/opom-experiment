@@ -2,7 +2,7 @@ mewtwo_psychic 22 318 0
 mewtwo_megakick 7 6 0
 mewtwo_recover 93 247 0
 mewtwo_seismictoss 9 4 0
-mew_bide 10 3 0
+mew_bide 57 13 0
 aerodactyl_fly 13 0 0
 snorlax_bodyslam 122 218 0
 mewtwo_icebeam 79 261 0
@@ -93,16 +93,16 @@ omanyte_toxic 13 0 0
 omanyte_watergun 13 0 0
 omanyte_withdraw 13 0 0
 omastar_bide 13 0 0
-omastar_blizzard 13 0 0
+omastar_blizzard 69 1 0
 omastar_bodyslam 12 1 0
 omastar_bubblebeam 13 0 0
 omastar_doubleedge 13 0 0
 omastar_doubleteam 13 0 0
 omastar_hornattack 13 0 0
 omastar_horndrill 13 0 0
-omastar_hydropump 13 0 0
+omastar_hydropump 70 0 0
 omastar_hyperbeam 13 0 0
-omastar_icebeam 12 1 0
+omastar_icebeam 62 8 0
 omastar_leer 13 0 0
 omastar_mimic 13 0 0
 omastar_rage 13 0 0
@@ -112,7 +112,7 @@ omastar_skullbash 13 0 0
 omastar_spikecannon 13 0 0
 omastar_submission 13 0 0
 omastar_substitute 13 0 0
-omastar_surf 13 0 0
+omastar_surf 70 0 0
 omastar_takedown 13 0 0
 omastar_watergun 13 0 0
 omastar_withdraw 13 0 0
@@ -156,9 +156,9 @@ kabutops_mimic 13 0 0
 kabutops_rage 13 0 0
 kabutops_razorwind 13 0 0
 kabutops_reflect 13 0 0
-kabutops_rest 13 0 0
+kabutops_rest 70 0 0
 kabutops_scratch 13 0 0
-kabutops_seismictoss 13 0 0
+kabutops_seismictoss 70 0 0
 kabutops_skullbash 13 0 0
 kabutops_submission 13 0 0
 kabutops_substitute 13 0 0
@@ -185,7 +185,7 @@ aerodactyl_substitute 13 0 0
 aerodactyl_supersonic 13 0 0
 aerodactyl_swift 13 0 0
 aerodactyl_takedown 13 0 0
-aerodactyl_toxic 13 0 0
+aerodactyl_toxic 70 0 0
 aerodactyl_whirlwind 13 0 0
 aerodactyl_wingattack 13 0 0
 snorlax_amnesia 13 0 0
@@ -277,7 +277,7 @@ moltres_agility 13 0 0
 moltres_bide 13 0 0
 moltres_doubleedge 13 0 0
 moltres_doubleteam 13 0 0
-moltres_fireblast 13 0 0
+moltres_fireblast 70 0 0
 moltres_firespin 13 0 0
 moltres_fly 13 0 0
 moltres_hyperbeam 13 0 0
@@ -385,7 +385,7 @@ dragonite_wrap 13 0 0
 mewtwo_amnesia 13 0 0
 mewtwo_barrier 13 0 0
 mewtwo_bide 9 4 0
-mewtwo_blizzard 3 17 0
+mewtwo_blizzard 5 65 0
 mewtwo_bubblebeam 10 3 0
 mewtwo_counter 13 0 0
 mewtwo_doubleedge 4 9 0

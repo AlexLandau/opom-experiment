@@ -24,7 +24,7 @@ vaporeon_growl 6 0 0
 vaporeon_haze 6 0 0
 vaporeon_hydropump 179 153 8
 vaporeon_hyperbeam 4 2 0
-vaporeon_icebeam 2 4 0
+vaporeon_icebeam 30 40 0
 vaporeon_mimic 2 4 0
 vaporeon_mist 6 0 0
 vaporeon_quickattack 4 2 0
@@ -438,7 +438,7 @@ dragonite_wrap 3 3 0
 mewtwo_amnesia 6 0 0
 mewtwo_barrier 6 0 0
 mewtwo_bide 5 1 0
-mewtwo_blizzard 13 7 0
+mewtwo_blizzard 40 30 0
 mewtwo_bubblebeam 6 0 0
 mewtwo_counter 6 0 0
 mewtwo_doubleedge 1 5 0

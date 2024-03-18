@@ -11,7 +11,7 @@ mewtwo_bodyslam 67 273 0
 omastar_toxic 8 0 0
 mewtwo_fireblast 267 73 0
 kabutops_slash 236 104 0
-mewtwo_thunder 0 8 0
+mewtwo_thunder 3 67 0
 porygon_toxic 8 0 0
 jolteon_thunderbolt 21 319 0
 mew_rockslide 299 41 0
@@ -31,7 +31,7 @@ vaporeon_swift 3 4 1
 vaporeon_tackle 7 1 0
 vaporeon_tailwhip 8 0 0
 vaporeon_takedown 3 3 2
-vaporeon_toxic 3 5 0
+vaporeon_toxic 23 47 0
 vaporeon_watergun 8 0 0
 jolteon_agility 8 0 0
 jolteon_bide 2 6 0
@@ -57,7 +57,7 @@ jolteon_swift 8 0 0
 jolteon_tackle 8 0 0
 jolteon_tailwhip 8 0 0
 jolteon_takedown 8 0 0
-jolteon_thunder 1 7 0
+jolteon_thunder 10 60 0
 jolteon_thundershock 6 2 0
 jolteon_thunderwave 8 0 0
 jolteon_toxic 8 0 0
@@ -210,7 +210,7 @@ kabutops_substitute 8 0 0
 kabutops_surf 8 0 0
 kabutops_swordsdance 8 0 0
 kabutops_takedown 8 0 0
-kabutops_toxic 8 0 0
+kabutops_toxic 70 0 0
 kabutops_watergun 8 0 0
 aerodactyl_agility 8 0 0
 aerodactyl_bide 8 0 0
@@ -234,7 +234,7 @@ aerodactyl_toxic 8 0 0
 aerodactyl_whirlwind 8 0 0
 aerodactyl_wingattack 8 0 0
 snorlax_amnesia 8 0 0
-snorlax_bide 8 0 0
+snorlax_bide 65 5 0
 snorlax_blizzard 8 0 0
 snorlax_bubblebeam 8 0 0
 snorlax_counter 8 0 0
@@ -279,7 +279,7 @@ articuno_doubleedge 5 3 0
 articuno_doubleteam 8 0 0
 articuno_fly 7 1 0
 articuno_hyperbeam 8 0 0
-articuno_icebeam 6 2 0
+articuno_icebeam 44 26 0
 articuno_mimic 8 0 0
 articuno_mist 8 0 0
 articuno_peck 8 0 0
@@ -430,7 +430,7 @@ dragonite_wrap 0 8 0
 mewtwo_amnesia 8 0 0
 mewtwo_barrier 8 0 0
 mewtwo_bide 6 2 0
-mewtwo_blizzard 13 7 0
+mewtwo_blizzard 38 32 0
 mewtwo_bubblebeam 8 0 0
 mewtwo_counter 8 0 0
 mewtwo_doubleedge 5 1 2

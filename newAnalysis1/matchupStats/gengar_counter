@@ -10,7 +10,7 @@ gengar_explosion 5 0 0
 gengar_hyperbeam 0 0 5
 gengar_hypnosis 0 0 5
 gengar_lick 0 5 0
-gengar_megadrain 0 0 12
+gengar_megadrain 0 7 63
 gengar_megakick 0 0 5
 gengar_megapunch 0 0 5
 gengar_metronome 2 1 2
@@ -479,13 +479,13 @@ rhyhorn_thunderbolt 0 5 0
 rhyhorn_toxic 5 0 0
 rhydon_bide 0 5 0
 rhydon_blizzard 0 5 0
-rhydon_bodyslam 5 0 0
+rhydon_bodyslam 70 0 0
 rhydon_bubblebeam 0 5 0
 rhydon_counter 5 0 0
-rhydon_dig 0 20 0
+rhydon_dig 0 70 0
 rhydon_doubleedge 5 0 0
 rhydon_doubleteam 5 0 0
-rhydon_earthquake 0 20 0
+rhydon_earthquake 0 70 0
 rhydon_fireblast 0 5 0
 rhydon_fissure 5 0 0
 rhydon_furyattack 5 0 0
@@ -501,7 +501,7 @@ rhydon_payday 5 0 0
 rhydon_rage 5 0 0
 rhydon_rest 5 0 0
 rhydon_rockslide 0 100 0
-rhydon_seismictoss 5 0 0
+rhydon_seismictoss 69 1 0
 rhydon_skullbash 5 0 0
 rhydon_stomp 5 0 0
 rhydon_strength 5 0 0
@@ -511,9 +511,9 @@ rhydon_surf 0 5 0
 rhydon_tailwhip 5 0 0
 rhydon_thunder 0 5 0
 rhydon_thunderbolt 0 5 0
-rhydon_toxic 5 0 0
+rhydon_toxic 70 0 0
 rhydon_watergun 0 5 0
-chansey_bide 0 20 0
+chansey_bide 0 70 0
 chansey_blizzard 0 5 0
 chansey_bodyslam 0 1 4
 chansey_bubblebeam 0 5 0
@@ -998,7 +998,7 @@ gyarados_thunderbolt 0 5 0
 gyarados_toxic 5 0 0
 gyarados_watergun 0 5 0
 lapras_bide 0 100 0
-lapras_blizzard 0 5 0
+lapras_blizzard 0 70 0
 lapras_bodyslam 5 0 0
 lapras_bubblebeam 0 5 0
 lapras_confuseray 0 5 0
@@ -1016,7 +1016,7 @@ lapras_psychic 0 5 0
 lapras_psywave 0 5 0
 lapras_rage 5 0 0
 lapras_reflect 5 0 0
-lapras_rest 5 0 0
+lapras_rest 70 0 0
 lapras_sing 5 0 0
 lapras_skullbash 5 0 0
 lapras_solarbeam 0 5 0
@@ -1026,7 +1026,7 @@ lapras_surf 0 5 0
 lapras_takedown 5 0 0
 lapras_thunder 0 5 0
 lapras_thunderbolt 0 5 0
-lapras_toxic 5 0 0
+lapras_toxic 70 0 0
 lapras_watergun 0 5 0
 ditto_transform 0 0 5
 eevee_bide 0 4 1
@@ -1484,7 +1484,7 @@ dragonite_wrap 5 0 0
 mewtwo_amnesia 5 0 0
 mewtwo_barrier 5 0 0
 mewtwo_bide 0 5 0
-mewtwo_blizzard 0 20 0
+mewtwo_blizzard 0 70 0
 mewtwo_bodyslam 100 0 0
 mewtwo_bubblebeam 0 5 0
 mewtwo_counter 5 0 0
@@ -1513,7 +1513,7 @@ mewtwo_swift 5 0 0
 mewtwo_takedown 5 0 0
 mewtwo_teleport 5 0 0
 mewtwo_thunder 0 100 0
-mewtwo_thunderbolt 0 20 0
+mewtwo_thunderbolt 0 70 0
 mewtwo_thunderwave 5 0 0
 mewtwo_toxic 5 0 0
 mewtwo_triattack 5 0 0

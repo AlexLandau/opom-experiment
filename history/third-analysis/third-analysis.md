@@ -239,3 +239,67 @@ Final version of in-group:
 - rhydon_earthquake
 - rhydon_seismictoss
 - rhydon_toxic
+
+
+Next I added some stuff to bring us up to a certain level of statistical confidence that we aren't
+missing anything in the "outside" group that should actually be in the in-group. This involves statistical
+tests for each regarding whether the actual value might be >= 0.5, as well as a code path that boosts sample
+sizes to get the sum of such p-values down below 0.05.
+
+Cur strategy:
+mewtwo_blizzard: 17.065%
+mewtwo_bodyslam: 12.913%
+mewtwo_psychic: 11.145%
+mewtwo_recover: 8.286%
+mewtwo_thunderbolt: 7.703%
+lapras_bide: 7.281%
+chansey_bide: 7.025%
+lapras_icebeam: 6.272%
+kabutops_slash: 5.894%
+rhydon_earthquake: 3.818%
+dewgong_toxic: 3.295%
+golem_toxic: 3.065%
+mewtwo_fireblast: 2.978%
+cloyster_rest: 2.338%
+rhydon_dig: 0.921%
+Strategy members / in-group members: 15/23
+Best against this strategy:
+  Best against this strategy:
+- 0.4972805982867194: mewtwo_icebeam* (p=0.335)
+- 0.49116821760371354: rhydon_toxic* (p=0.077)
+- 0.4907028098890314: lapras_toxic* (p=0.067)
+- 0.488700167066102: lapras_rest* (p=0.033)
+- 0.4794230119992228: lapras_blizzard* (p=0)
+- 0.4779629128668132: gengar_toxic (p=0)
+- 0.47779418744796526: haunter_toxic (p=0)
+- 0.477641707958012: gastly_toxic* (p=0)
+- 0.47597429472756614: golem_dig (p=0.005)
+- 0.47371667831468517: omastar_seismictoss (p=0.002)
+Final version of in-group:
+- chansey_bide
+- cloyster_rest
+- dewgong_toxic
+- gastly_toxic
+- gengar_megadrain
+- golem_toxic
+- kabutops_slash
+- lapras_bide
+- lapras_blizzard
+- lapras_icebeam
+- lapras_rest
+- lapras_toxic
+- mewtwo_blizzard
+- mewtwo_bodyslam
+- mewtwo_fireblast
+- mewtwo_icebeam
+- mewtwo_psychic
+- mewtwo_recover
+- mewtwo_thunderbolt
+- rhydon_dig
+- rhydon_earthquake
+- rhydon_seismictoss
+- rhydon_toxic
+Sum of probabilities of unincluded being above 0.5: 0.04065336848064727
+
+The next round should tackle the question of how accurate the numbers within the strategy are, which will probably be
+harder...

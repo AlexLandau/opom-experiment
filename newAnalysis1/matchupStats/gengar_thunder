@@ -430,7 +430,7 @@ weezing_thunderbolt 5 0 0
 weezing_toxic 5 0 0
 rhyhorn_bide 0 5 0
 rhyhorn_bodyslam 5 0 0
-rhyhorn_dig 0 5 0
+rhyhorn_dig 0 70 0
 rhyhorn_doubleedge 5 0 0
 rhyhorn_doubleteam 5 0 0
 rhyhorn_earthquake 0 5 0
@@ -458,10 +458,10 @@ rhydon_blizzard 0 5 0
 rhydon_bodyslam 5 0 0
 rhydon_bubblebeam 0 5 0
 rhydon_counter 0 5 0
-rhydon_dig 0 20 0
+rhydon_dig 0 70 0
 rhydon_doubleedge 5 0 0
 rhydon_doubleteam 5 0 0
-rhydon_earthquake 0 20 0
+rhydon_earthquake 0 70 0
 rhydon_fireblast 0 5 0
 rhydon_fissure 5 0 0
 rhydon_furyattack 5 0 0
@@ -477,7 +477,7 @@ rhydon_payday 5 0 0
 rhydon_rage 5 0 0
 rhydon_rest 5 0 0
 rhydon_rockslide 0 100 0
-rhydon_seismictoss 0 5 0
+rhydon_seismictoss 0 70 0
 rhydon_skullbash 5 0 0
 rhydon_stomp 5 0 0
 rhydon_strength 5 0 0
@@ -487,9 +487,9 @@ rhydon_surf 0 5 0
 rhydon_tailwhip 5 0 0
 rhydon_thunder 0 5 0
 rhydon_thunderbolt 0 5 0
-rhydon_toxic 5 0 0
+rhydon_toxic 70 0 0
 rhydon_watergun 0 5 0
-chansey_bide 4 16 0
+chansey_bide 14 56 0
 chansey_blizzard 0 5 0
 chansey_bodyslam 5 0 0
 chansey_bubblebeam 1 4 0
@@ -974,7 +974,7 @@ gyarados_thunderbolt 5 0 0
 gyarados_toxic 5 0 0
 gyarados_watergun 5 0 0
 lapras_bide 79 21 0
-lapras_blizzard 3 2 0
+lapras_blizzard 44 26 0
 lapras_bodyslam 5 0 0
 lapras_bubblebeam 5 0 0
 lapras_confuseray 5 0 0
@@ -992,7 +992,7 @@ lapras_psychic 3 2 0
 lapras_psywave 5 0 0
 lapras_rage 5 0 0
 lapras_reflect 5 0 0
-lapras_rest 5 0 0
+lapras_rest 69 1 0
 lapras_sing 5 0 0
 lapras_skullbash 5 0 0
 lapras_solarbeam 5 0 0
@@ -1002,7 +1002,7 @@ lapras_surf 4 1 0
 lapras_takedown 5 0 0
 lapras_thunder 5 0 0
 lapras_thunderbolt 3 2 0
-lapras_toxic 5 0 0
+lapras_toxic 70 0 0
 lapras_watergun 5 0 0
 ditto_transform 2 3 0
 eevee_bide 4 1 0
@@ -1037,7 +1037,7 @@ vaporeon_doubleteam 5 0 0
 vaporeon_focusenergy 5 0 0
 vaporeon_growl 5 0 0
 vaporeon_haze 5 0 0
-vaporeon_hydropump 2 6 0
+vaporeon_hydropump 36 34 0
 vaporeon_hyperbeam 5 0 0
 vaporeon_icebeam 3 2 0
 vaporeon_mimic 4 1 0
@@ -1054,7 +1054,7 @@ vaporeon_swift 5 0 0
 vaporeon_tackle 5 0 0
 vaporeon_tailwhip 5 0 0
 vaporeon_takedown 5 0 0
-vaporeon_toxic 5 0 0
+vaporeon_toxic 70 0 0
 vaporeon_watergun 5 0 0
 jolteon_agility 5 0 0
 jolteon_bide 3 2 0
@@ -1080,7 +1080,7 @@ jolteon_swift 5 0 0
 jolteon_tackle 5 0 0
 jolteon_tailwhip 5 0 0
 jolteon_takedown 5 0 0
-jolteon_thunder 0 5 0
+jolteon_thunder 0 70 0
 jolteon_thunderbolt 0 13 0
 jolteon_thundershock 0 5 0
 jolteon_thunderwave 5 0 0
@@ -1238,7 +1238,7 @@ kabutops_substitute 5 0 0
 kabutops_surf 5 0 0
 kabutops_swordsdance 5 0 0
 kabutops_takedown 5 0 0
-kabutops_toxic 5 0 0
+kabutops_toxic 70 0 0
 kabutops_watergun 5 0 0
 aerodactyl_agility 5 0 0
 aerodactyl_bide 3 2 0
@@ -1263,7 +1263,7 @@ aerodactyl_toxic 5 0 0
 aerodactyl_whirlwind 5 0 0
 aerodactyl_wingattack 5 0 0
 snorlax_amnesia 5 0 0
-snorlax_bide 3 2 0
+snorlax_bide 42 28 0
 snorlax_blizzard 3 2 0
 snorlax_bodyslam 100 0 0
 snorlax_bubblebeam 5 0 0
@@ -1309,7 +1309,7 @@ articuno_doubleedge 5 0 0
 articuno_doubleteam 5 0 0
 articuno_fly 4 1 0
 articuno_hyperbeam 5 0 0
-articuno_icebeam 3 2 0
+articuno_icebeam 51 19 0
 articuno_mimic 5 0 0
 articuno_mist 5 0 0
 articuno_peck 4 1 0
@@ -1460,7 +1460,7 @@ dragonite_wrap 5 0 0
 mewtwo_amnesia 5 0 0
 mewtwo_barrier 5 0 0
 mewtwo_bide 1 4 0
-mewtwo_blizzard 2 18 0
+mewtwo_blizzard 4 66 0
 mewtwo_bodyslam 100 0 0
 mewtwo_bubblebeam 1 4 0
 mewtwo_counter 5 0 0
@@ -1489,7 +1489,7 @@ mewtwo_swift 5 0 0
 mewtwo_takedown 5 0 0
 mewtwo_teleport 5 0 0
 mewtwo_thunder 15 85 0
-mewtwo_thunderbolt 0 20 0
+mewtwo_thunderbolt 1 69 0
 mewtwo_thunderwave 5 0 0
 mewtwo_toxic 5 0 0
 mewtwo_triattack 5 0 0

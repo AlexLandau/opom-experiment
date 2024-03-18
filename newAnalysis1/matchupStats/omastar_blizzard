@@ -2,7 +2,7 @@ mewtwo_psychic 41 229 0
 mewtwo_megakick 5 0 0
 mewtwo_recover 148 122 0
 mewtwo_seismictoss 0 5 0
-mew_bide 2 3 0
+mew_bide 21 49 0
 aerodactyl_fly 5 0 0
 snorlax_bodyslam 9 2 0
 mewtwo_icebeam 132 138 0
@@ -19,3 +19,9 @@ omastar_surf 60 210 0
 dragonite_bodyslam 270 0 0
 mewtwo_bide 3 2 0
 articuno_blizzard 0 5 0
+omastar_hydropump 12 58 0
+omastar_icebeam 39 31 0
+kabutops_rest 21 49 0
+kabutops_seismictoss 16 54 0
+aerodactyl_toxic 70 0 0
+moltres_fireblast 70 0 0

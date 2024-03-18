@@ -6,10 +6,10 @@ mew_bide 5 0 0
 aerodactyl_fly 5 0 0
 snorlax_bodyslam 139 161 0
 mewtwo_icebeam 300 0 0
-omastar_rest 3 2 0
+omastar_rest 58 12 0
 lapras_icebeam 295 5 0
 mewtwo_bodyslam 45 255 0
-omastar_toxic 5 0 0
+omastar_toxic 70 0 0
 mewtwo_fireblast 26 274 0
 kabutops_slash 274 26 0
 mewtwo_thunder 0 5 0
@@ -27,3 +27,6 @@ lapras_rest 0 300 0
 dragonite_bodyslam 5 295 0
 mewtwo_bide 2 3 0
 articuno_blizzard 5 0 0
+lapras_thunderbolt 0 70 0
+omastar_seismictoss 67 3 0
+mewtwo_rest 1 69 0
