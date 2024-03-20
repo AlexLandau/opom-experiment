@@ -1,4 +1,4 @@
-mewtwo_psychic 775 374 1
+mewtwo_psychic 6083 3066 1
 mewtwo_megakick 259 151 0
 mewtwo_recover 0 1150 0
 mewtwo_seismictoss 294 116 0
@@ -25,7 +25,7 @@ mewtwo_substitute 20 0 0
 mewtwo_swift 19 1 0
 mewtwo_takedown 18 0 2
 mewtwo_teleport 20 0 0
-mewtwo_thunderbolt 653 497 0
+mewtwo_thunderbolt 2880 2270 0
 mewtwo_thunderwave 20 0 0
 mewtwo_toxic 20 0 0
 mewtwo_triattack 16 4 0

@@ -1,6 +1,6 @@
 mewtwo_psywave 17 3 0
 mewtwo_rage 20 0 0
-mewtwo_recover 126 1024 0
+mewtwo_recover 448 3702 0
 mewtwo_reflect 20 0 0
 mewtwo_rest 175 45 0
 mewtwo_seismictoss 87 323 0
@@ -14,7 +14,7 @@ mewtwo_swift 13 7 0
 mewtwo_takedown 15 4 1
 mewtwo_teleport 20 0 0
 mewtwo_thunder 127 93 0
-mewtwo_thunderbolt 459 691 0
+mewtwo_thunderbolt 3159 4991 0
 mewtwo_thunderwave 20 0 0
 mewtwo_toxic 16 4 0
 mewtwo_triattack 6 14 0

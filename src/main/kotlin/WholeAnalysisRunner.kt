@@ -1,6 +1,7 @@
 package net.alloyggp.opom
 
 import net.alloyggp.opom.nash2.Strategy
+import net.alloyggp.opom.nash2.measureSensitivityToChanges
 import net.alloyggp.opom.nash2.solveForNashEquilibriumAmong
 import org.apache.commons.math3.stat.inference.AlternativeHypothesis
 import org.apache.commons.math3.stat.inference.BinomialTest
@@ -37,6 +38,7 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
     val savedIngroupFile = File(analysisRoot, "ingroup")
 
     fun run() {
+        val wholeAnalysisStartTime = System.currentTimeMillis()
         if (!analysisRoot.exists()) {
             analysisRoot.mkdir()
         }
@@ -105,14 +107,40 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
                     for (combatant in combatantsOfInterest) {
                         println("  - $combatant")
                     }
-                    val sumOfProbsOfOutsidersAbove50Percent = getSumOfProbsOfOutsidersAbove50Percent(strategy, mrs)
-                    println("Sum of probabilities of unincluded being above 0.5: " + sumOfProbsOfOutsidersAbove50Percent)
-                    if (sumOfProbsOfOutsidersAbove50Percent > 0.05) {
-                        val (outsidersToSample, newSampleSize) = identifyOutsidersAndSamplesToAcquire(strategy, mrs)
-                        boostInGroupStatsToN(newSampleSize, outsidersToSample)
-                        println("New sum of probabilities of unincluded being above 0.5: " + getSumOfProbsOfOutsidersAbove50Percent(strategy, loadGen1Results(statisticsDir)))
-                        continue
+
+                    if (passNumber == 2) {
+                        val sensitivities = measureSensitivityToChanges(strategy, combatantsOfInterest.toList(), mrs)
+                        val sensitivitiesSum = sensitivities.values.sum()
+                        println("Sum of sensitivies: $sensitivitiesSum")
+                        println("Most sensitive matchups:")
+                        for ((matchup, sensitivity) in sensitivities.entries.sortedByDescending { it.value }.take(10)) {
+                            val (left, right) = matchup
+                            println("  - $sensitivity: $left vs. $right")
+                        }
+                        if (sensitivitiesSum > 1.0) {
+                            val matchups = sensitivities.entries.sortedByDescending { it.value }.take(8)
+                            // TODO: We need an option in the sample collector to just target specific matchups
+                            val boostTargets = ArrayList<MatchupBoostTarget>()
+                            for (matchup in matchups) {
+                                val (left, right) = matchup.key
+                                boostTargets.add(MatchupBoostTarget(left, right, mrs.getMatchupResult(left, right).getSamples() + 1000))
+                            }
+                            // TODO: Run the thing, then continue
+                            println("Boosting counts of those matchups...")
+                            boostSpecificMatchups(boostTargets)
+                            continue
+                        }
+
+                        val sumOfProbsOfOutsidersAbove50Percent = getSumOfProbsOfOutsidersAbove50Percent(strategy, mrs)
+                        println("Sum of probabilities of unincluded being above 0.5: " + sumOfProbsOfOutsidersAbove50Percent)
+                        if (sumOfProbsOfOutsidersAbove50Percent > 0.05) {
+                            val (outsidersToSample, newSampleSize) = identifyOutsidersAndSamplesToAcquire(strategy, mrs)
+                            boostInGroupStatsToN(newSampleSize, outsidersToSample)
+                            println("New sum of probabilities of unincluded being above 0.5: " + getSumOfProbsOfOutsidersAbove50Percent(strategy, loadGen1Results(statisticsDir)))
+                            continue
+                        }
                     }
+
                     val toRemove = HashSet<String>()
                     for (combatant in combatantsOfInterest) {
                         val combatantIndex = matchupResultStore.getContestantIndex(combatant)
@@ -124,6 +152,7 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
                     }
                     combatantsOfInterest.removeAll(toRemove)
                     saveInGroup()
+                    println("Time running whole analysis (if there wasn't a break in the middle): ${(System.currentTimeMillis() - wholeAnalysisStartTime) / 1000.0} seconds")
                     break
                 }
             }
@@ -266,6 +295,21 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
         val timeSeconds = (System.currentTimeMillis() - startTime) / 1000.0
         println("Collected statistics in ${timeSeconds} seconds")
     }
+    data class MatchupBoostTarget(val left: String, val right: String, val count: Int) {
+        fun toJsonArrayString(): String {
+            return "[\"$left\",\"$right\",$count]"
+        }
+    }
+
+    private fun boostSpecificMatchups(boostTargets: ArrayList<MatchupBoostTarget>) {
+        val startTime = System.currentTimeMillis()
+        runPokemonShowdown(gen, ActionType.SPECIFIC_MATCHUPS, listOf(
+                statisticsDir.absolutePath,
+                boostTargets.map { it.toJsonArrayString() }.joinToString(",", "[", "]")
+        ))
+        val timeSeconds = (System.currentTimeMillis() - startTime) / 1000.0
+        println("Boosted specific-matchup statistics in ${timeSeconds} seconds")
+    }
 }
 
 private fun Double.toThreeDecimals(): String {
@@ -295,6 +339,7 @@ fun runSingleElimTournamentGetWinner(gen: Int): String {
 enum class ActionType(val argName: String) {
     SINGLE_ELIM_TOURNAMENT("single_elim"),
     COLLECT_STATS("collect_stats"),
+    SPECIFIC_MATCHUPS("specific_matchups"),
 }
 
 val scriptLocation = "/home/alandau/code/Pokemon-Showdown/run.sh"

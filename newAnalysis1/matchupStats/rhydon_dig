@@ -7,7 +7,7 @@ mew_bide 21 49 0
 chansey_seismictoss 330 0 0
 aerodactyl_fly 0 300 0
 rhydon_rockslide 70 0 0
-snorlax_bodyslam 520 0 0
+snorlax_bodyslam 1000 0 0
 mewtwo_icebeam 1 1149 0
 omastar_rest 520 0 0
 lapras_bide 305 845 0
@@ -727,14 +727,14 @@ omastar_doubleedge 20 0 0
 omastar_doubleteam 20 0 0
 omastar_hornattack 20 0 0
 omastar_horndrill 7 13 0
-omastar_hydropump 5 65 0
+omastar_hydropump 7 113 0
 omastar_hyperbeam 20 0 0
 omastar_icebeam 12 108 0
 omastar_leer 20 0 0
 omastar_mimic 0 20 0
 omastar_rage 20 0 0
 omastar_reflect 20 0 0
-omastar_seismictoss 520 0 0
+omastar_seismictoss 1000 0 0
 omastar_skullbash 20 0 0
 omastar_spikecannon 20 0 0
 omastar_submission 20 0 0

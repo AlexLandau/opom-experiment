@@ -10,7 +10,7 @@ gengar_thunder 0 70 0
 chansey_seismictoss 0 330 0
 aerodactyl_fly 20 0 0
 rhydon_rockslide 67 3 0
-snorlax_bodyslam 494 26 0
+snorlax_bodyslam 948 52 0
 mewtwo_icebeam 0 1150 0
 omastar_rest 0 520 0
 lapras_bide 1150 0 0
@@ -391,7 +391,7 @@ cloyster_doubleedge 20 0 0
 cloyster_doubleteam 20 0 0
 cloyster_explosion 20 0 0
 cloyster_hyperbeam 20 0 0
-cloyster_icebeam 0 70 0
+cloyster_icebeam 0 120 0
 cloyster_leer 20 0 0
 cloyster_mimic 20 0 0
 cloyster_rage 20 0 0
@@ -651,7 +651,7 @@ electrode_tackle 20 0 0
 electrode_takedown 20 0 0
 electrode_teleport 20 0 0
 electrode_thunder 20 0 0
-electrode_thunderbolt 20 0 0
+electrode_thunderbolt 120 0 0
 electrode_thunderwave 20 0 0
 electrode_toxic 4 16 0
 exeggcute_barrage 20 0 0
@@ -1455,7 +1455,7 @@ lapras_skullbash 20 0 0
 lapras_solarbeam 0 370 0
 lapras_strength 20 0 0
 lapras_substitute 20 0 0
-lapras_surf 0 70 0
+lapras_surf 0 120 0
 lapras_takedown 20 0 0
 lapras_thunder 70 0 0
 lapras_thunderbolt 70 0 0
@@ -1623,14 +1623,14 @@ omastar_doubleedge 20 0 0
 omastar_doubleteam 20 0 0
 omastar_hornattack 20 0 0
 omastar_horndrill 2 18 0
-omastar_hydropump 0 70 0
+omastar_hydropump 0 120 0
 omastar_hyperbeam 20 0 0
 omastar_icebeam 0 120 0
 omastar_leer 20 0 0
 omastar_mimic 17 3 0
 omastar_rage 20 0 0
 omastar_reflect 20 0 0
-omastar_seismictoss 0 520 0
+omastar_seismictoss 0 1000 0
 omastar_skullbash 20 0 0
 omastar_spikecannon 20 0 0
 omastar_submission 7 13 0

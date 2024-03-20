@@ -303,3 +303,94 @@ Sum of probabilities of unincluded being above 0.5: 0.04065336848064727
 
 The next round should tackle the question of how accurate the numbers within the strategy are, which will probably be
 harder...
+
+I threw something together that feels decent -- it checks how much changing each matchup to its 95% confidence interval
+bounds changes the strategy (measuring via the L1 distance) and repeatedly adds matchup runs to the most sensitive
+matchups.
+
+This gives us:
+
+Cur strategy:
+mewtwo_blizzard: 17.665%
+mewtwo_bodyslam: 12.926%
+mewtwo_psychic: 10.713%
+lapras_bide: 8.369%
+mewtwo_recover: 7.976%
+mewtwo_thunderbolt: 7.719%
+chansey_bide: 6.189%
+kabutops_slash: 6.004%
+lapras_icebeam: 5.757%
+dewgong_toxic: 3.656%
+rhydon_earthquake: 3.639%
+mewtwo_fireblast: 3.416%
+golem_toxic: 2.83%
+cloyster_rest: 1.846%
+rhydon_dig: 1.293%
+Strategy members / in-group members: 15/22
+Boosting against-strategy stats to 20...
+Collected statistics in 3.384 seconds
+Loaded results in 0.356 seconds
+Best against this strategy:
+- 0.4929746027505705: mewtwo_icebeam* (p=0.075)
+- 0.49206060347986547: rhydon_toxic* (p=0.105)
+- 0.4908028602021138: lapras_rest* (p=0.074)
+- 0.489461192022825: lapras_toxic* (p=0.047)
+- 0.47984654761210166: gengar_toxic (p=0.001)
+- 0.47980850412494686: lapras_blizzard* (p=0.001)
+- 0.47967689086702625: haunter_toxic (p=0.001)
+- 0.4795565285185321: gastly_toxic* (p=0.001)
+- 0.47300073497802253: golem_dig (p=0)
+- 0.4725446373530581: snorlax_bodyslam (p=0)
+  Collected statistics in 3.286 seconds
+  Loaded results in 0.441 seconds
+  Best against this strategy:
+- 0.4929746027505705: mewtwo_icebeam* (p=0.075)
+- 0.49206060347986547: rhydon_toxic* (p=0.105)
+- 0.4908028602021138: lapras_rest* (p=0.074)
+- 0.489461192022825: lapras_toxic* (p=0.047)
+- 0.47984654761210166: gengar_toxic (p=0.001)
+- 0.47980850412494686: lapras_blizzard* (p=0.001)
+- 0.47967689086702625: haunter_toxic (p=0.001)
+- 0.4795565285185321: gastly_toxic* (p=0.001)
+- 0.47300073497802253: golem_dig (p=0)
+- 0.4725446373530581: snorlax_bodyslam (p=0)
+  Maybe ran out of new entries? Ending for now
+  Final version of in-group:
+- chansey_bide
+- cloyster_rest
+- dewgong_toxic
+- gastly_toxic
+- golem_toxic
+- kabutops_slash
+- lapras_bide
+- lapras_blizzard
+- lapras_icebeam
+- lapras_rest
+- lapras_toxic
+- mewtwo_blizzard
+- mewtwo_bodyslam
+- mewtwo_fireblast
+- mewtwo_icebeam
+- mewtwo_psychic
+- mewtwo_recover
+- mewtwo_thunderbolt
+- rhydon_dig
+- rhydon_earthquake
+- rhydon_seismictoss
+- rhydon_toxic
+  Sum of sensitivies: 0.9431912376148668
+  Most sensitive matchups:
+- 0.024924584520573757: lapras_icebeam vs. mewtwo_bodyslam
+- 0.02104965252964305: mewtwo_blizzard vs. mewtwo_bodyslam
+- 0.020935891214635904: chansey_bide vs. lapras_bide
+- 0.02090427507470681: lapras_bide vs. mewtwo_blizzard
+- 0.020834039818555153: mewtwo_blizzard vs. mewtwo_psychic
+- 0.020756390762136444: lapras_icebeam vs. mewtwo_psychic
+- 0.020740480832768533: chansey_bide vs. mewtwo_blizzard
+- 0.02072551438099174: mewtwo_blizzard vs. mewtwo_thunderbolt
+- 0.020679784881049813: lapras_icebeam vs. mewtwo_thunderbolt
+- 0.02060293649293065: lapras_bide vs. mewtwo_bodyslam
+  Sum of probabilities of unincluded being above 0.5: 0.0429279207884421
+
+Now I just want to run this again from a fresh slate of data and see if we end up somewhere close by.
+

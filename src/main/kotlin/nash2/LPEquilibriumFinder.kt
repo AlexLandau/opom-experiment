@@ -140,7 +140,10 @@ fun oldMain() {
     strategy.print()
 }
 
-fun solveForNashEquilibriumAmong(mixedStrategyIndices: List<Int>, mrs: MatchupResultStore<String>): Strategy {
+fun solveForNashEquilibriumAmong(
+        mixedStrategyIndices: List<Int>,
+        mrs: MatchupResultStore<String>,
+        winRateOverrides: Map<Pair<Int, Int>, Double> = mapOf()): Strategy {
     val solver = SimplexSolver()
     /*
 
@@ -176,7 +179,9 @@ maximum number of iterations: MaxIter - optional, default: Integer.MAX_VALUE
             if (innerIndex == outerIndex) {
                 coefficients.add(0.5)
             } else {
-                coefficients.add(mrs.getMatchupResultByIndices(outerIndex, innerIndex).getLeftWinningRate())
+                val leftWinRate = winRateOverrides[Pair(outerIndex, innerIndex)]
+                        ?: mrs.getMatchupResultByIndices(outerIndex, innerIndex).getLeftWinningRate()
+                coefficients.add(leftWinRate)
             }
         }
         coefficients.add(-1.0)
