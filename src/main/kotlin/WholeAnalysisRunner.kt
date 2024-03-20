@@ -27,7 +27,7 @@ import kotlin.math.sqrt
 // Test case for the above: RPS but with two scissors cases, and the matchup for the scissors somewhere close to 0.5
 
 fun main() {
-    val curAnalysisRoot = File("newAnalysis1")
+    val curAnalysisRoot = File("newAnalysis2")
 
     AnalysisState(curAnalysisRoot, 1).run()
 }

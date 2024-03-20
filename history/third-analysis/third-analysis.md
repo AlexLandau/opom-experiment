@@ -394,3 +394,122 @@ Best against this strategy:
 
 Now I just want to run this again from a fresh slate of data and see if we end up somewhere close by.
 
+("Boosting against-strategy stats to 20..." takes quite a long time, 39 minutes, wonder if it's slightly overkill...)
+
+Strat just before boosting sensitivities:
+
+mewtwo_blizzard: 14.324%
+mewtwo_bodyslam: 12.592%
+mewtwo_psychic: 11.448%
+lapras_icebeam: 9.398%
+mewtwo_recover: 8.599%
+mewtwo_thunderbolt: 8.538%
+chansey_bide: 8.076%
+kabutops_slash: 6.003%
+lapras_bide: 5.412%
+rhydon_earthquake: 4.165%
+golem_toxic: 3.463%
+cloyster_rest: 2.706%
+dewgong_toxic: 2.55%
+mewtwo_fireblast: 2.076%
+rhydon_dig: 0.651%
+
+And the final result:
+
+Cur strategy:
+mewtwo_blizzard: 15.073%
+mewtwo_bodyslam: 12.398%
+mewtwo_psychic: 11.877%
+mewtwo_recover: 8.698%
+lapras_icebeam: 8.327%
+mewtwo_thunderbolt: 8.112%
+chansey_bide: 8.051%
+kabutops_slash: 6.41%
+lapras_bide: 5.554%
+golem_toxic: 3.541%
+rhydon_earthquake: 3.345%
+cloyster_rest: 2.805%
+dewgong_toxic: 2.634%
+mewtwo_fireblast: 2.266%
+rhydon_dig: 0.909%
+Strategy members / in-group members: 15/19
+Boosting against-strategy stats to 20...
+Best against this strategy:
+- 0.4946982907386191: mewtwo_icebeam* (p=0.198)
+- 0.49265611833871004: rhydon_toxic* (p=0.122)
+- 0.49228342928572116: lapras_toxic* (p=0.107)
+- 0.49158423132899337: lapras_rest* (p=0.09)
+- 0.4790808996840018: golem_dig (p=0)
+- 0.4731893006500011: haunter_toxic (p=0.003)
+- 0.4731842348064525: gengar_toxic (p=0.003)
+- 0.47312252125927234: gastly_toxic (p=0.003)
+- 0.4721094814464308: lapras_blizzard (p=0.002)
+- 0.4689329556469392: rhydon_seismictoss (p=0)
+Best against this strategy:
+- 0.4946982907386191: mewtwo_icebeam* (p=0.198)
+- 0.49265611833871004: rhydon_toxic* (p=0.122)
+- 0.49228342928572116: lapras_toxic* (p=0.107)
+- 0.49158423132899337: lapras_rest* (p=0.09)
+- 0.4790808996840018: golem_dig (p=0)
+- 0.4731893006500011: haunter_toxic (p=0.003)
+- 0.4731842348064525: gengar_toxic (p=0.003)
+- 0.47312252125927234: gastly_toxic (p=0.003)
+- 0.4721094814464308: lapras_blizzard (p=0.002)
+- 0.4689329556469392: rhydon_seismictoss (p=0)
+Maybe ran out of new entries? Ending for now
+Final version of in-group:
+- chansey_bide
+- cloyster_rest
+- dewgong_toxic
+- golem_toxic
+- kabutops_slash
+- lapras_bide
+- lapras_icebeam
+- lapras_rest
+- lapras_toxic
+- mewtwo_blizzard
+- mewtwo_bodyslam
+- mewtwo_fireblast
+- mewtwo_icebeam
+- mewtwo_psychic
+- mewtwo_recover
+- mewtwo_thunderbolt
+- rhydon_dig
+- rhydon_earthquake
+- rhydon_toxic
+Sum of sensitivies: 0.9907273978989315
+Most sensitive matchups:
+- 0.028076578872012294: lapras_icebeam vs. mewtwo_bodyslam
+- 0.02342416951114968: mewtwo_fireblast vs. mewtwo_psychic
+- 0.023246047851938283: lapras_icebeam vs. mewtwo_psychic
+- 0.022818379223594247: mewtwo_blizzard vs. mewtwo_psychic
+- 0.02276275435398991: lapras_icebeam vs. mewtwo_recover
+- 0.022754824469195096: mewtwo_blizzard vs. mewtwo_bodyslam
+- 0.02267971998222252: lapras_bide vs. mewtwo_psychic
+- 0.022588837678521375: mewtwo_blizzard vs. mewtwo_recover
+- 0.02255314972833415: chansey_bide vs. mewtwo_bodyslam
+- 0.02255147656746107: chansey_bide vs. lapras_icebeam
+Sum of probabilities of unincluded being above 0.5: 0.04587625307365539
+Time running whole analysis (if there wasn't a break in the middle): 10392.672 seconds (2.89 hours)
+
+
+
+Comparing the two independent runs:
+
+mewtwo_blizzard:   17.665% -> 15.073%
+mewtwo_bodyslam:   12.926% -> 12.398%
+mewtwo_psychic:    10.713% -> 11.877%
+lapras_bide:        8.369% ->  5.554%
+mewtwo_recover:     7.976% ->  8.698%
+mewtwo_thunderbolt: 7.719% ->  8.112%
+chansey_bide:       6.189% ->  8.051%
+kabutops_slash:     6.004% ->  6.41%
+lapras_icebeam:     5.757% ->  8.327%
+dewgong_toxic:      3.656% ->  2.634%
+rhydon_earthquake:  3.639% ->  3.345%
+mewtwo_fireblast:   3.416% ->  2.266%
+golem_toxic:        2.830% ->  3.541%
+cloyster_rest:      1.846% ->  2.805%
+rhydon_dig:         1.293% ->  0.909%
+
+This is an L1 difference of 0.17572 and an L2 difference of 0.05587034991836.
