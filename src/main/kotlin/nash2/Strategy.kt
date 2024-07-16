@@ -109,7 +109,7 @@ class Strategy(private val choiceNames: List<String>) {
         var effectivenessAgainstCurStrat = 0.0
         for (mixedStratIndex in this.choices.keys) {
             effectivenessAgainstCurStrat += this.getChoiceNormalizedWeight(mixedStratIndex) *
-                                            mrs.getMatchupResultByIndices(choiceIndex, mixedStratIndex).getLeftWinningRate()
+                    (if (mixedStratIndex == choiceIndex) 0.5 else mrs.getMatchupResultByIndices(choiceIndex, mixedStratIndex).getLeftWinningRate())
         }
         return effectivenessAgainstCurStrat
     }

@@ -17,7 +17,8 @@ fun loadGen1Results(resultsFolder: File = File("../Pokemon-Showdown/collectedSta
     }
 //    println(movesets)
 
-    val mrs = MatchupResultStore(movesets)
+    // val mrs = FullArrayMatchupResultStore(movesets)
+    val mrs = MapMatchupResultStore(movesets)
 
     for (file in resultsFolder.listFiles()) {
         val left = file.name

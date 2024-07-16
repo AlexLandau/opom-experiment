@@ -1,0 +1,221 @@
+Experimenting with gen2-no-items to see how that goes:
+
+Here's the status at the point of switching to the second pass (after running for maybe 4 hours):
+
+Cur strategy:
+  rapidash_horndrill: 16.337%
+  mewtwo_icebeam: 13.544%
+  mew_horndrill: 12.448%
+  raikou_thunderbolt: 11.69%
+  dugtrio_fissure: 11.22%
+  lapras_horndrill: 6.159%
+  gengar_psychic: 5.306%
+  hooh_sacredfire: 4.986%
+  snorlax_doubleedge: 4.134%
+  lugia_aeroblast: 3.182%
+  starmie_hydropump: 2.394%
+  tauros_horndrill: 1.946%
+  dragonite_horndrill: 1.577%
+  vaporeon_hydropump: 1.567%
+  omastar_hydropump: 1.486%
+  mewtwo_psychic: 0.924%
+  misdreavus_shadowball: 0.812%
+  mew_fissure: 0.265%
+  gengar_gigadrain: 0.024%
+Strategy members / in-group members: 19/47
+Boosting against-strategy stats to 5...
+Collected statistics in 8.181 seconds
+Loaded results in 1.683 seconds
+Best against this strategy:
+  - 0.4989954745270258: misdreavus_psychic* (p=0.46)
+  - 0.4956617509586335: starmie_surf* (p=0.318)
+  - 0.4952892003790191: misdreavus_hiddenpower* (p=0.306)
+  - 0.49260498866300506: starmie_bubblebeam (p=0.572)
+  - 0.49226184193360384: gengar_thunder* (p=0.189)
+  - 0.4898395312255347: snorlax_fissure (p=0.134)
+  - 0.487103879350199: jolteon_thunderbolt (p=0.071)
+  - 0.48607820273027313: jolteon_thunder (p=0.064)
+  - 0.48458109968851515: gengar_thunderbolt* (p=0.036)
+  - 0.48240884572334614: gligar_guillotine* (p=0.021)
+Collected statistics in 138.828 seconds
+Loaded results in 1.741 seconds
+Best against this strategy:
+  - 0.4989954745270258: misdreavus_psychic* (p=0.46)
+  - 0.4956617509586335: starmie_surf* (p=0.318)
+  - 0.4952892003790191: misdreavus_hiddenpower* (p=0.306)
+  - 0.49226184193360384: gengar_thunder* (p=0.189)
+  - 0.4898395312255347: snorlax_fissure (p=0.134)
+  - 0.487103879350199: jolteon_thunderbolt (p=0.071)
+  - 0.48607820273027313: jolteon_thunder (p=0.064)
+  - 0.48458109968851515: gengar_thunderbolt* (p=0.036)
+  - 0.48240884572334614: gligar_guillotine* (p=0.021)
+  - 0.4805716157843205: gengar_hiddenpower* (p=0.012)
+Maybe ran out of new entries? Ending for now
+Final version of in-group:
+  - articuno_icebeam
+  - chansey_rest
+  - dodrio_return
+  - dragonite_horndrill
+  - dugtrio_fissure
+  - espeon_hiddenpower
+  - gastly_nightshade
+  - gengar_gigadrain
+  - gengar_hiddenpower
+  - gengar_icepunch
+  - gengar_psychic
+  - gengar_thunder
+  - gengar_thunderbolt
+  - gligar_guillotine
+  - hooh_return
+  - hooh_sacredfire
+  - hooh_shadowball
+  - houndoom_crunch
+  - kangaskhan_fissure
+  - lapras_horndrill
+  - lapras_rest
+  - lugia_aeroblast
+  - mew_fissure
+  - mew_horndrill
+  - mewtwo_icebeam
+  - mewtwo_psychic
+  - mewtwo_return
+  - misdreavus_hiddenpower
+  - misdreavus_psychic
+  - misdreavus_shadowball
+  - omastar_hydropump
+  - pupitar_ancientpower
+  - pupitar_earthquake
+  - raikou_crunch
+  - raikou_thunderbolt
+  - rapidash_horndrill
+  - rhydon_earthquake
+  - snorlax_doubleedge
+  - starmie_hydropump
+  - starmie_surf
+  - suicune_surf
+  - tauros_bodyslam
+  - tauros_horndrill
+  - tyranitar_crunch
+  - tyranitar_earthquake
+  - vaporeon_hydropump
+  - vaporeon_surf
+Will remove chansey_rest from in-group, win rate is 0.44253094439886903
+Will remove dodrio_return from in-group, win rate is 0.28068629607958084
+Will remove espeon_hiddenpower from in-group, win rate is 0.29740187018448294
+Will remove gastly_nightshade from in-group, win rate is 0.401862724684755
+Will remove hooh_return from in-group, win rate is 0.35773061592309907
+Will remove houndoom_crunch from in-group, win rate is 0.4288259974650523
+Will remove kangaskhan_fissure from in-group, win rate is 0.4446212601688293
+Will remove lapras_rest from in-group, win rate is 0.29424614037452024
+Will remove mewtwo_return from in-group, win rate is 0.30131255303941795
+Will remove pupitar_ancientpower from in-group, win rate is 0.3480473270047802
+Will remove pupitar_earthquake from in-group, win rate is 0.40127778807885783
+Will remove tauros_bodyslam from in-group, win rate is 0.34329526776243713
+Will remove tyranitar_crunch from in-group, win rate is 0.44713893653677966
+Will remove tyranitar_earthquake from in-group, win rate is 0.441205122051477
+Time running whole analysis (if there wasn't a break in the middle): 15419.822 seconds
+Starting pass 2
+Boosting among-in-group stats to 1000...
+Collected statistics in 252.581 seconds
+Loaded results in 1.709 seconds
+Cur strategy:
+  rapidash_horndrill: 17.821%
+  mewtwo_icebeam: 14.51%
+  mew_horndrill: 11.77%
+  dugtrio_fissure: 11.592%
+  raikou_thunderbolt: 11.367%
+  lapras_horndrill: 6.068%
+  hooh_sacredfire: 5.449%
+  lugia_aeroblast: 3.463%
+  snorlax_doubleedge: 3.091%
+  gengar_psychic: 2.906%
+  tauros_horndrill: 2.74%
+  starmie_hydropump: 2.28%
+  vaporeon_hydropump: 1.579%
+  dragonite_horndrill: 1.112%
+  misdreavus_psychic: 1.111%
+  mewtwo_psychic: 1.015%
+  gengar_gigadrain: 0.901%
+  misdreavus_shadowball: 0.501%
+  omastar_hydropump: 0.381%
+  gengar_thunder: 0.253%
+  misdreavus_hiddenpower: 0.092%
+Strategy members / in-group members: 21/33
+
+
+
+
+And here's the strategy at the point where I realized I hadn't implemented Smeargle or Hidden Power correctly and would
+have to start over (this is in newAnalysis3):
+
+Cur strategy:
+  mew_horndrill: 17.588%
+  rapidash_horndrill: 14.548%
+  mewtwo_icebeam: 11.316%
+  dugtrio_fissure: 11.31%
+  raikou_thunder: 8.779%
+  hooh_sacredfire: 7.294%
+  gengar_psychic: 5.814%
+  jolteon_thunderbolt: 4.879%
+  snorlax_bodyslam: 4.497%
+  lugia_aeroblast: 3.061%
+  vaporeon_hydropump: 2.875%
+  lapras_horndrill: 2.256%
+  dragonite_horndrill: 2.187%
+  gengar_icepunch: 1.168%
+  mewtwo_psychic: 1.159%
+  omastar_hydropump: 0.939%
+  starmie_hydropump: 0.33%
+Strategy members / in-group members: 17/36
+Boosting against-strategy stats to 20...
+Collected statistics in 8.038 seconds
+Loaded results in 1.739 seconds
+Best against this strategy:
+  - 0.4988631830502673: gligar_guillotine* (p=0.112)
+  - 0.49846178924106865: misdreavus_psychic* (p=0.05)
+  - 0.49817237255211516: misdreavus_shadowball* (p=0.025)
+  - 0.49730804282160634: raikou_thunderbolt* (p=0.001)
+  - 0.4914863521276537: starmie_surf* (p=0)
+  - 0.48588214239317395: tauros_horndrill* (p=0)
+  - 0.4856850155321593: rhydon_horndrill* (p=0)
+  - 0.4852252994688839: misdreavus_hiddenpower* (p=0)
+  - 0.4842035028007596: snorlax_fissure* (p=0)
+  - 0.4822807895766082: gengar_thunder* (p=0)
+Final version of in-group:
+  - dragonite_horndrill
+  - dugtrio_fissure
+  - gengar_gigadrain
+  - gengar_hiddenpower
+  - gengar_icepunch
+  - gengar_psychic
+  - gengar_thunder
+  - gengar_thunderbolt
+  - gligar_guillotine
+  - hooh_sacredfire
+  - hooh_shadowball
+  - jolteon_thunderbolt
+  - lapras_horndrill
+  - lugia_aeroblast
+  - mew_fissure
+  - mew_horndrill
+  - mewtwo_icebeam
+  - mewtwo_psychic
+  - misdreavus_hiddenpower
+  - misdreavus_psychic
+  - misdreavus_shadowball
+  - omastar_hydropump
+  - raikou_thunder
+  - raikou_thunderbolt
+  - rapidash_horndrill
+  - rhydon_earthquake
+  - rhydon_horndrill
+  - snorlax_bodyslam
+  - snorlax_doubleedge
+  - snorlax_fissure
+  - starmie_hydropump
+  - starmie_surf
+  - steelix_fissure
+  - tauros_horndrill
+  - vaporeon_hydropump
+  - vaporeon_surf
+

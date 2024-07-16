@@ -26,13 +26,16 @@ import kotlin.math.sqrt
 
 // Test case for the above: RPS but with two scissors cases, and the matchup for the scissors somewhere close to 0.5
 
-fun main() {
-    val curAnalysisRoot = File("newAnalysis2")
+// TODO: gen2_no_items needs support for different Hidden Power types
 
-    AnalysisState(curAnalysisRoot, 1).run()
+fun main() {
+    val curAnalysisRoot = File("newAnalysis4")
+    val gen = Generation.GEN2_NO_ITEMS
+
+    AnalysisState(curAnalysisRoot, gen).run()
 }
 
-class AnalysisState(val analysisRoot: File, val gen: Int) {
+class AnalysisState(val analysisRoot: File, val gen: Generation) {
     val combatantsOfInterest = TreeSet<String>()
     val statisticsDir = File(analysisRoot, "matchupStats")
     val savedIngroupFile = File(analysisRoot, "ingroup")
@@ -44,7 +47,7 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
         }
 
         if (!savedIngroupFile.exists() || loadInGroup().isEmpty()) {
-            for (i in 1..10) {
+            for (i in 1..4) {
                 println("Running single-elimination tournament...")
                 val winner = runSingleElimTournamentGetWinner(gen)
                 println("Found winner $winner")
@@ -64,6 +67,8 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
         // TODO: Collect a set of info among these, then compute an equilibrium
         // Then collect stats for combatants relative to the ones actually in the equilibrium, then continue...
 
+        var inFineTuningPhase = false
+
         for (passNumber in 1..2) {
             println("Starting pass $passNumber")
             while (true) {
@@ -72,8 +77,10 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
                     2 -> maxOf(100 + (10 * combatantsOfInterest.size), 1000)
                     else -> throw IllegalStateException()
                 }
-                println("Boosting among-in-group stats to $inGroupBoostTarget...")
-                boostInGroupStatsToN(inGroupBoostTarget)
+                if (!inFineTuningPhase) {
+                    println("Boosting among-in-group stats to $inGroupBoostTarget...")
+                    boostInGroupStatsToN(inGroupBoostTarget)
+                }
 
                 val matchupResultStore = loadGen1Results(statisticsDir)
                 val strategy = solveForNashEquilibriumAmong(getCombatantsOfInterestIndices(matchupResultStore), matchupResultStore)
@@ -90,34 +97,44 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
                     2 -> 20
                     else -> throw IllegalStateException()
                 }
-                println("Boosting against-strategy stats to $boostTarget...")
-                boostAgainstStrategyStatsToN(strategy, matchupResultStore, boostTarget)
-                // Take the ones that are close and boost their numbers as if they were in the group, and _then_ pick the best one
-                val bestAgainstStratList = findAndPrintBestAgainstStrategy(strategy, loadGen1Results(statisticsDir))
-                boostInGroupStatsToN(inGroupBoostTarget, additional = bestAgainstStratList.map { it.combatant })
+                if (!inFineTuningPhase) {
+                    println("Boosting against-strategy stats to $boostTarget...")
+                    boostAgainstStrategyStatsToN(strategy, matchupResultStore, boostTarget)
+                    // Take the ones that are close and boost their numbers as if they were in the group, and _then_ pick the best one
+                    val bestAgainstStratList = findAndPrintBestAgainstStrategy(strategy, loadGen1Results(statisticsDir))
+                    boostInGroupStatsToN(inGroupBoostTarget, additional = bestAgainstStratList.map { it.combatant })
+                }
                 val mrs = loadGen1Results(statisticsDir)
                 val bestOutsiderAgainstStrat = findAndPrintBestAgainstStrategy(strategy, mrs).first { !combatantsOfInterest.contains(it.combatant) }
                 if (bestOutsiderAgainstStrat.winRate > 0.49) {
                     println("Adding ${bestOutsiderAgainstStrat} to in-group")
                     combatantsOfInterest.add(bestOutsiderAgainstStrat.combatant)
+                    inFineTuningPhase = false
                     saveInGroup()
                 } else {
-                    println("Maybe ran out of new entries? Ending for now")
-                    println("Final version of in-group:")
-                    for (combatant in combatantsOfInterest) {
-                        println("  - $combatant")
+                    if (!inFineTuningPhase) {
+                        println("Maybe ran out of new entries? Ending for now")
+                        println("Final version of in-group:")
+                        for (combatant in combatantsOfInterest) {
+                            println("  - $combatant")
+                        }
                     }
 
                     if (passNumber == 2) {
+                        inFineTuningPhase = true
                         val sensitivities = measureSensitivityToChanges(strategy, combatantsOfInterest.toList(), mrs)
                         val sensitivitiesSum = sensitivities.values.sum()
-                        println("Sum of sensitivies: $sensitivitiesSum")
-                        println("Most sensitive matchups:")
-                        for ((matchup, sensitivity) in sensitivities.entries.sortedByDescending { it.value }.take(10)) {
-                            val (left, right) = matchup
-                            println("  - $sensitivity: $left vs. $right")
-                        }
+                        println("Sum of sensitivities: $sensitivitiesSum")
+
+                        val sumOfProbsOfOutsidersAbove50Percent = getSumOfProbsOfOutsidersAbove50Percent(strategy, mrs)
+                        println("Sum of probabilities of unincluded being above 0.5: " + sumOfProbsOfOutsidersAbove50Percent)
+
                         if (sensitivitiesSum > 1.0) {
+                            println("Most sensitive matchups:")
+                            for ((matchup, sensitivity) in sensitivities.entries.sortedByDescending { it.value }.take(10)) {
+                                val (left, right) = matchup
+                                println("  - $sensitivity: $left vs. $right")
+                            }
                             val matchups = sensitivities.entries.sortedByDescending { it.value }.take(8)
                             // TODO: We need an option in the sample collector to just target specific matchups
                             val boostTargets = ArrayList<MatchupBoostTarget>()
@@ -130,9 +147,6 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
                             boostSpecificMatchups(boostTargets)
                             continue
                         }
-
-                        val sumOfProbsOfOutsidersAbove50Percent = getSumOfProbsOfOutsidersAbove50Percent(strategy, mrs)
-                        println("Sum of probabilities of unincluded being above 0.5: " + sumOfProbsOfOutsidersAbove50Percent)
                         if (sumOfProbsOfOutsidersAbove50Percent > 0.05) {
                             val (outsidersToSample, newSampleSize) = identifyOutsidersAndSamplesToAcquire(strategy, mrs)
                             boostInGroupStatsToN(newSampleSize, outsidersToSample)
@@ -163,7 +177,8 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
     private fun identifyOutsidersAndSamplesToAcquire(strategy: Strategy, mrs: MatchupResultStore<String>): OutsidersAndSample {
         data class SortableOutsiderData(val outsider: String, val winRate: Double, val pValue: Double, val sampleSize: Int)
         val outsiders = ArrayList<SortableOutsiderData>()
-        for (outsider in mrs.contestants - combatantsOfInterest) {
+        // TODO: Should this exclude things in the "within 0.49" group? Otherwise tends to fixate on those
+        for (outsider in mrs.contestants - strategy.getNonDefaultIndices().map { mrs.contestants.get(it) }.toSet()) {
             val outsiderIndex = mrs.getContestantIndex(outsider)
             val sampleSize = getMinSampleSizeAgainstStrategy(strategy, outsiderIndex, mrs)
             val winRate = strategy.getWinRateAgainstThisStrategy(mrs, outsiderIndex)
@@ -186,7 +201,7 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
 
     private fun getSumOfProbsOfOutsidersAbove50Percent(strategy: Strategy, mrs: MatchupResultStore<String>): Double {
         var sum = 0.0
-        for (outsider in mrs.contestants - combatantsOfInterest) {
+        for (outsider in mrs.contestants - strategy.getNonDefaultIndices().map { mrs.contestants.get(it) }.toSet()) {
             sum += getPValueOfTrueValueAbove50Percent(outsider, strategy, mrs)
         }
         return sum
@@ -202,6 +217,9 @@ class AnalysisState(val analysisRoot: File, val gen: Int) {
         // is conservative.
         val sampleSize = getMinAdjustedSampleSizeAgainstStrategy(strategy, index, mrs)
         val winRate = strategy.getWinRateAgainstThisStrategy(mrs, index)
+        if (winRate.isNaN()) {
+            println("combatant is $combatant, strategy is $strategy")
+        }
         // To be conservative, we round up
         val numberOfWins = ceil(winRate * sampleSize).roundToInt()
         val result = BinomialTest().binomialTest(
@@ -327,7 +345,7 @@ fun toJsonArray(strings: Iterable<String>): String {
 }
 
 // Takes around 40-50 seconds
-fun runSingleElimTournamentGetWinner(gen: Int): String {
+fun runSingleElimTournamentGetWinner(gen: Generation): String {
     val startTime = System.currentTimeMillis()
     val output = runPokemonShowdown(gen, ActionType.SINGLE_ELIM_TOURNAMENT, listOf())
     val timeSeconds = (System.currentTimeMillis() - startTime) / 1000.0
@@ -342,10 +360,15 @@ enum class ActionType(val argName: String) {
     SPECIFIC_MATCHUPS("specific_matchups"),
 }
 
+enum class Generation(val argName: String) {
+    GEN1("gen1"),
+    GEN2_NO_ITEMS("gen2_no_items"),
+}
+
 val scriptLocation = "/home/alandau/code/Pokemon-Showdown/run.sh"
-fun runPokemonShowdown(gen: Int, action: ActionType, args: List<String>): String {
+fun runPokemonShowdown(gen: Generation, action: ActionType, args: List<String>): String {
     val command = mutableListOf("bash", scriptLocation,
-            "gen${gen}",
+            gen.argName,
             action.argName)
     command.addAll(args)
     // TODO: Use better process execution
